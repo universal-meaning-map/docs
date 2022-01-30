@@ -1,4 +1,6 @@
+# Interplanetary mind-map (IPMM)
 - [Interplanetary mind-map (IPMM)](#interplanetary-mind-map-ipmm)
+  - [Overview](#overview)
   - [Minformation terminology](#minformation-terminology)
   - [Self-describing](#self-describing)
   - [System Topology](#system-topology)
@@ -14,9 +16,10 @@
     - [Comparison with the Semantic Web](#comparison-with-the-semantic-web)
     - [Project philosophy](#project-philosophy)
 - [Pseudo Interplanetary mind-map (Pipmm)](#pseudo-interplanetary-mind-map-pipmm)
-  - [Overview](#overview)
+  - [Overview](#overview-1)
   - [Installation (WIP)](#installation-wip)
-# Interplanetary mind-map (IPMM)
+
+## Overview
 
 The interplanetary mind map is a long term project that aims to explore and build tools and protocols to make digital human-to-human / human-to-self communication more efficient to minimize human conflict and maximize the capacity to understand complex information. It does it by building a protocol that endorses 2 fundamental assumptions:
 1. The meaning or understanding of information is unique to each mind, as it is the product of an extremely complex cloud of associations. The word `minformation`is used to make this explicit.
