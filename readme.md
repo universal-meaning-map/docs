@@ -36,15 +36,11 @@ These assumptions force digital information to be structured connected and neste
 
 Example:
 
-```md
-Each of us has a different idea of what a car is. There is a cloud of experiences, associations and understandings that conforms to our understanding of a car. This cloud, in a particular moment, for a particular mind is an `abstraction`.
+> Each of us has a different idea of what a car is. There is a cloud of experiences, associations and understandings that conforms to our understanding of a car. This cloud, in a particular moment, for a particular mind is an `abstraction`. 
+> If I try to explain what a car is to you, I will only be able to express part of the cloud that I have in my head, there are things that I don't remember, there are associations of the car that I have that I'm not aware of, I'm limited on time for what I can express, and even if I could do the above the limits of the language will only be able to communicate part of it. That's why any expression of what a car means to me is just an `abstraction projection`. 
+> Despite an `abstraction` being not representable and constantly evolving we still can refer to a "car". There is a "container" that we can point at, and therefore does not change, it holds the evolving idea of the car. This container is the `abstraction intent`. 
+> When we communicate, we use the word "car". This is an `abstraction pointer` to the `abstraction intent` of a car. It doesn't point to the `abstraction` itself as it is only a snapshot in time. An `abstraction intent` can have many `abstraction pointers`, a picture of a car or even a memory can also be `abstraction pointers`
 
-If I try to explain what a car is to you, I will only be able to express part of the cloud that I have in my head, there are things that I don't remember, there are associations of the car that I have that I'm not aware of, I'm limited on time for what I can express, and even if I could do the above the limits of the language will only be able to communicate part of it. That's why any expression of what a car means to me is just an `abstraction projection`.
-
-Despite an `abstraction` being not representable and constantly evolving we still can refer to a "car". There is a "container" that we can point at, and therefore does not change, it holds the evolving idea of the car. This container is the `abstraction intent`.
-
-When we communicate, we use the word "car". This is an `abstraction pointer` to the `abstraction intent` of a car. It doesn't point to the `abstraction` itself as it is only a snapshot in time. An `abstraction intent` can have many `abstraction pointers`, a picture of a car or even a memory can also be `abstraction pointers`
-```
 
 ## Self-describing
 The `self-describing` quality is manifested in many ways in the system:
