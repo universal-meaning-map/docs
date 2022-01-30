@@ -28,12 +28,12 @@ These assumptions force digital information to be structured connected and neste
 ## Minformation terminology
 - `abstraction`: Is the atomic part of `minformation`. Anything that a `mind` can make sense of, can be encapsulated as an `abstraction`. It exists only in a particular `mind` at a given time. It can't ever be expressed nor represented fully. It is constantly changing as we add more associations to it.
 - `abstraction projection`: Is a representation attempt of an `abstraction`, it is inherently incomplete and distorted. 
-- `abstraction intent`: A `abstraction` is ephemeral can be understood as the state of a concept in a given time for a given mind. The `abstraction intent is an immutable container where this concept lives and is what we usually refer to in our daily communications.
+- `abstraction intent`: A `abstraction` is ephemeral, it can be understood as the state of a concept in a given time for a given mind. The `abstraction intent` is an immutable container where this concept lives and is what we usually refer to in our daily communications.
 - `abstraction pointer`: Is what we use to refer to an `abstraction intent`. We do that all the time with symbols and words (signs), these are `abstraction pointers`.
 
 Example:
 
-```
+```md
 Each of us has a different idea of what a car is. There is a cloud of experiences, associations and understandings that conforms to our understanding of a car. This cloud, in a particular moment, for a particular mind is an `abstraction`.
 
 If I try to explain what a car is to you, I will only be able to express part of the cloud that I have in my head, there are things that I don't remember, there are associations of the car that I have that I'm not aware of, I'm limited on time for what I can express, and even if I could do the above the limits of the language will only be able to communicate part of it. That's why any expression of what a car means to me is just an `abstraction projection`.
@@ -46,58 +46,57 @@ When we communicate, we use the word "car". This is an `abstraction pointer` to 
 ## Self-describing
 The `self-describing` quality is manifested in many ways in the system:
 
-1. `self-describing note`: This is a quality that the author or a `note` should aim for, and is what allows the overall ontology to grow and be coherent. It can't be enforced by the system, but it can be incentivized.
+1. `self-describing note`: This is a quality that the author of a `note` should aim for, and is what allows the overall ontology to grow and be coherent. It can't be enforced by the system, but it can be incentivized.
 2. `self-describing type`: The "key" of each `note` `property` is nothing but an `abstraction-pointer` to the `type note`. A `type note` is a `note` that contains all the information to be processed by a computer (classic type system), but also the information to be semantically understood by a `mind`. The development of this type-system is one of the critical aspects of the development of the project.
-3. `self-describing text`: We have the capacity now to make `transclusion` by making words, paragraphs and other structures are pointers to particular `note` `properties` and having a semantic interface that guarantees that the transclusion will still make sense in the future. This enables the capacity for each word to be `self-describing` which means that we do not need to rely on the ambiguous definitions of a global dictionary and instead we can create extremely explicit text where a resolution to its meaning can be added progressively. This type of text format is currently referred to as `interplanetary-text` and is one of the main focuses of exploration of the project.
+3. `self-describing text`: We have the capacity now to make `transclusions` by making words, paragraphs and other text structures to be pointers to particular `notes` `properties` and having a semantic interface that guarantees that the transclusion will still make sense in the future. This enables the capacity for each word to be `self-describing` which means that we do not need to rely on the ambiguous definitions of a global dictionary and instead we can create extremely explicit text where a resolution to its meaning can be added progressively. This type of text format is currently referred to as `interplanetary-text` and is one of the main focuses of exploration of the project.
 
 ## System Topology
 > While the main ideas are quite definitive, the specific details still change constantly and should not be taken as specifications. They are for illustrative purposes only.
 
 ### Node
-The system tries to mimic the behaviour of `minformation` in the analogue world. Because the origin of `minformation` is on each mind, a `mind` is represented in the system-
-A `mind` is the source of the `abstraction projections`, currently referred to as `notes`.
-A `mind` takes the form of a "node" in a peer-to-peer network. Is the element we need to refer to if we want to know its latest updates.
+- The system tries to mimic the behaviour of `minformation` in the analogue world. Because the origin of `minformation` is on each mind, a `mind` is represented in the system.
+- A `mind` is the source of the `abstraction projections`, currently referred to as `notes`.
+- A `mind` takes the form of a `node` in a peer-to-peer network. Is the element we need to refer to if we want to know its latest updates.
 
 ### MID - Mind identifier
-The `MID`or `Mind Identifier` is a unique identifier derived from a private key and used to identify any given `mind`/`node`
-Any request concerning a given `mind` will have to be handled by its respective node and to uniquely identify the `node` in the network we use the `MID`
-A `MID`looks like this: `QmXPTSJee8a4uy61vhAs35tM5bXDomSmo1BbTMUVAVbAGJ`
+- The `MID` or `Mind Identifier` is a unique identifier derived from a private key and used to identify any given `mind`/`node`.
+- Any request concerning a given `mind` will have to be handled by its respective `node` and to uniquely identify the `node` in the network we use the `MID`.
+- A `MID`looks like this: `QmXPTSJee8a4uy61vhAs35tM5bXDomSmo1BbTMUVAVbAGJ`
 
 ### Note
-An instance of an `abstraction-projection` in the system is currently referred to as `note`.
-A `note` aims to represent an `abstraction` as accurately as possible, although is always the best effort.
-A `note` is made of a list of arbitrary lengths of `predicates`. A `predicate` is a quality or attribute of the `abstraction`.
-A `predicate` has the form of a key-value pair. The "key" is the `property` that can be understood as the how/verb/relationship/type...
-A `note` is an `IPLD` object that points at other `IPLD` objects.
+- An instance of an `abstraction-projection` in the system is currently referred to as `note`.
+
+- A `note` aims to represent an `abstraction` as accurately as possible, although is always the best effort.
+- A `note` is made of a list of arbitrary lengths of `predicates`. A `predicate` is a quality or attribute of the `abstraction`.
+- A `predicate` has the form of a key-value pair. The "key" is the `property` that can be understood as the how/verb/relationship/type...
+- A `note` is an [`IPLD`](https://ipld.io/docs/) object that points at other `IPLD` objects.
 
 ### CID - Content identifier
-At any given time, a `note` is represented by a `CID`. This is a cryptographic hash of the `IPLD` object of the `note`.
-Therefore the `CID`is an immutable reference to an `abstraction-projection`.
-A CID looks like this: `baguqeeragkrzqs7df67d2qiwedqw56glsmwrssjhsp25mujxx5vdbu5yqbzq`
+- At any given time, a `note` is represented by a [`CID`](https://github.com/multiformats/cid).
+- A `CID` is a cryptographic hash of the `IPLD` object of a `note`.
+- A `CID`is an immutable reference to an `abstraction-projection`.
+- A CID looks like this: `baguqeeragkrzqs7df67d2qiwedqw56glsmwrssjhsp25mujxx5vdbu5yqbzq`
 
 ### IID - Intent identifier
-While the `CID`allows us to reference a snapshot of an `abstraction`, we still need a way to reference the evolving idea of an `abstraction`, the `abstraction-intent`.
-The `IID`is the identifier of the container of an `abstraction`
-An `IID` is always mapped to the latest `CID`of a given `abstraction`
-An `IID`is composed of a `MID`and the `LIID`(`Local Intent identifier`)`
-An  `IID` looks like this: `QmXPTSJee8a4uy61vhAs35tM5bXDomSmo1BbTMUVAVbAGJsdqwz4ea`, the 46 first characters representing the `MID`and the latest 8 representing the `LIID`
-
+- While the `CID`allows us to reference a snapshot of an `abstraction`, we still need a way to reference the evolving idea of an `abstraction`, the `abstraction-intent`.
+- The `IID`is the identifier of the container of an `abstraction`.
+- An `IID` is always mapped to the latest `CID`of a given `abstraction`.
+- An `IID`is composed of a `MID`and the `LIID`(`Local Intent identifier`)`.
+- An  `IID` looks like this: `QmXPTSJee8a4uy61vhAs35tM5bXDomSmo1BbTMUVAVbAGJsdqwz4ea`, the 46 first characters representing the `MID` and the latest 8 representing the `LIID`
 ![Intent identifier mapping timeline](images/abstraction_timeline.png)
 
 ### AREF - Abstraction reference
-The `AREF` is a text expression that allows us to point to any element of the system. 
-Is the equivalent of what `hyperlink` is to the `hypertext`
-It can have several forms depending on if is pointing to an `IID`or a `CID`, or if we want to be more precise and point to a specific property or object within a `note`
-```
-IID/PID/IPLD_path or CID/PID/IPLD_path
-```
-If the `AREF` is pointing to an `IID`it will resolve to the `CID`, and then will resolve the `CID`
-A `AREF`may look like that `QmXPTSJee8a4uy61vhAs35tM5bXDomSmo1BbTMUVAVbAGJz6zpqnbq/QmXPTSJee8a4uy61vhAs35tM5bXDomSmo1BbTMUVAVbAGJqz3qlkca`
+
+- The `AREF` is a text expression that allows us to point to any element of the system. 
+- Is the equivalent of what `hyperlink` is to the `hypertext`
+- It can have several forms depending on if is pointing to an `IID`or a `CID`, or if we want to be more precise and point to a specific property or object within a `note`: `IID/PID/IPLD_path` or `CID/PID/IPLD_path`
+- If the `AREF` is pointing to an `IID`it will resolve to the `CID`, and then will resolve the `CID`
+- A `AREF`may look like that `QmXPTSJee8a4uy61vhAs35tM5bXDomSmo1BbTMUVAVbAGJz6zpqnbq/QmXPTSJee8a4uy61vhAs35tM5bXDomSmo1BbTMUVAVbAGJqz3qlkca`
 
 ### Property
-A `property` (key) defines "how" the `note` relates to any other information (value)
-The `property` in itself is a pointer to another `note`, that describes the semantic and type attributes of that `property`. This means that the meaning of how `notes` relate to other `notes` is always given by the users.
-This also means that `properties can be understood as "global" variables, but the "global" scope is not within a project but truly global.
+- A `property` (key) defines "how" the `note` relates to any other information (value)
+- The `property` in itself is a pointer to another `note`, that describes the semantic and type attributes of that `property`. This means that the meaning of how `notes` relate to other `notes` is always given by the users.
+- This also means that `properties` can be understood as "global" variables, but the "global" scope is not within a project but truly global.
 `Properties` are `self-describing` types that include a semantic and typing interface.
 
 
@@ -130,16 +129,17 @@ Certain elements may seem similar to the `Semantic web` (and other similar proto
 
 `Pseudo Interplanetary mind-map` is a proof a concept to play, understand and validate the previous assumptions. While the technical part is complex, there are a lesser amount of unknowns than its conceptual counterpart. That means that the challenge does not reside in its implementation but understanding and generating a conceptual framework to help to operate with the aforementioned assumptions.
 
-This also implies that this software is mostly for experimental purposes and is not meant for production or a general audience but for people that already have a significant pre-understanding of the project and want to explore its possibilities.
 
 ## Overview
+> This software is mostly for experimental purposes and is not meant for production or a general audience but for people that already have a significant pre-understanding of the project and want to explore its possibilities.
+
 The following repositories compose the project:
 
-`abstractions-template`: This is a template that users can use to play around and generate content. To be able to play with complex information without having to build a special editor for it the `abstractions` repo is built around `VS Code` in combination with `Foam` and a set of `Snippets` and guidelines to help to format and manage the content in a particular way.
-`pipmm-cli`: An NPM package that helps to manipulate and compile the `abstractions` repo into the newly defined format, as well as to upload, serve and visualize them.
-`pipmm-client`: A Flutter project to render the contents. `pipmm-cli`  uses it
-`pipmm-server`: A simple Node server that plays the role of a node in the system. `pipmm-cli` uses it
-`docs` (this repo): Most of the conceptual development is being dog fed in several users `abstractions` repositories, the system is currently too unstable serve as documentation itself, although that is the ultimate goal. The purpose of `pipmm-docs` is therefore to be a stable reference for the project in the meantime.
+- `abstractions-template`: This is a template that users can use to play around and generate content. To be able to play with complex information without having to build a special editor for it the `abstractions` repo is built around `VS Code` in combination with `Foam` and a set of `Snippets` and guidelines to help to format and manage the content in a particular way.
+- `pipmm-cli`: An NPM package that helps to manipulate and compile the `abstractions` repo into the newly defined format, as well as to upload, serve and visualize them.
+- `pipmm-client`: A Flutter project to render the contents. `pipmm-cli`  uses it
+- `pipmm-server`: A simple Node server that plays the role of a node in the system. `pipmm-cli` uses it
+- `docs` (this repo): Most of the conceptual development is being dog fed in several users `abstractions` repositories, the system is currently too unstable serve as documentation itself, although that is the ultimate goal. The purpose of `pipmm-docs` is therefore to be a stable reference for the project in the meantime.
 
 
 ## Installation (WIP)
