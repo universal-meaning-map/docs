@@ -1,6 +1,7 @@
 # Interplanetary mind-map (IPMM)
 - [Interplanetary mind-map (IPMM)](#interplanetary-mind-map-ipmm)
   - [Overview](#overview)
+  - [Communication efficiency](#communication-efficiency)
   - [Minformation terminology](#minformation-terminology)
   - [Self-describing](#self-describing)
   - [System Topology](#system-topology)
@@ -27,11 +28,32 @@ The interplanetary mind map is a long term project that aims to explore and buil
 
 These assumptions force digital information to be structured connected and nested in a different new way. It enables a new paradigm of computation and communication that revolves around the particular ontologies of each mind allowing to adapt to each person needs, as opposed to subordinating people to the pre-assumptions, bias and incentives of software creators.
 
+## Communication efficiency
+
+Human conflict arises when there is miscommunication: when we lack context when we lack empathy when we misunderstand... If communication aims for a lossless transfer of information we miscommunicate all the time.
+
+Digital protocols are very good at exchanging data in a lossless form, but not good at exchanging `minformation`. 
+
+If we understand `minformation` like a cloud of associations in one person's mind it becomes clear why digital communication is so hard. We are forced to "marshall" this cloud into a "linear" medium (text, voice, video...), and the space and time and language are limited.
+
+A similar thing happens when we try to understand complex information. The tools that we have to distil, transform, visualize and make sense of it do not map our cloud of associations. So, when we read, learn, study... we are constantly "marshalling" and "unmarshalling" information with tools creating an enormous mental overhead.
+
+In both cases, a lot of noise is added and a lot of information is not even expressed due to the limitations of the mediums.
+
+The approach of `Interplanetary mind-map` is to be able to recreate a map of the `mind` in a digital form. With this digital ontology, it becomes easier to make sense of digital information as we remove a lot of the "noise" that comes from using systems that are not adapted to our particular `mind`. While the system is still constrained and will never be able to represent what we have in our heads it can get much closer than the current tools. 
+
+Now, we can share parts of this mind-map with others, so instead of simply using a word to refer to "car", we can share our entire cloud that a car represents, with all the associations that it has with it.
+
+We are enhancing communication efficiency because what we communicate carries "context", as opposed to just exchanging a "sign" that may have a very different meaning by the receiver. 
+
+Instead of being forced to a "linear" medium we now have graphs, and while the consumption of the graph may be linear, it is now possible to explore all its branches to make sense of the differences between the emitter `minformation` and the receiver `minformation`
+
 
 ## Minformation terminology
-- `abstraction`: Is the atomic part of `minformation`. Anything that a `mind` can make sense of, can be encapsulated as an `abstraction`. It exists only in a particular `mind` at a given time. It can't ever be expressed nor represented fully. It is constantly changing as we add more associations to it.
+
+- `abstraction`: Is the atomic part of `minformation`. Anything that a `mind` can make sense of, can be encapsulated as an `abstraction`. It exists only in a particular `mind` at a given time. It can't ever be expressed nor represented fully. It is dynamic, constantly changing, as we add more associations to it.
 - `abstraction projection`: Is a representation attempt of an `abstraction`, it is inherently incomplete and distorted. 
-- `abstraction intent`: A `abstraction` is ephemeral, it can be understood as the state of a concept in a given time for a given mind. The `abstraction intent` is an immutable container where this concept lives and is what we usually refer to in our daily communications.
+- `abstraction intent`: A `abstraction` is dynamic, it can be understood as the state of a concept in a given time for a given mind. The `abstraction intent` is a static container where this concept lives and is what we usually refer to in our daily communications.
 - `abstraction pointer`: Is what we use to refer to an `abstraction intent`. We do that all the time with symbols and words (signs), these are `abstraction pointers`.
 
 Example:
@@ -46,11 +68,21 @@ Example:
 
 
 ## Self-describing
-The `self-describing` quality is manifested in many ways in the system:
 
-1. `self-describing note`: This is a quality that the author of a `note` should aim for, and is what allows the overall ontology to grow and be coherent. It can't be enforced by the system, but it can be incentivized.
-2. `self-describing type`: The "key" of each `note` `property` is nothing but an `abstraction-pointer` to the `type note`. A `type note` is a `note` that contains all the information to be processed by a computer (classic type system), but also the information to be semantically understood by a `mind`. The development of this type-system is one of the critical aspects of the development of the project.
-3. `self-describing text`: We have the capacity now to make `transclusions` by making words, paragraphs and other text structures to be pointers to particular `notes` `properties` and having a semantic interface that guarantees that the transclusion will still make sense in the future. This enables the capacity for each word to be `self-describing` which means that we do not need to rely on the ambiguous definitions of a global dictionary and instead we can create extremely explicit text where a resolution to its meaning can be added progressively. This type of text format is currently referred to as `interplanetary-text` and is one of the main focuses of exploration of the project.
+`Self-describing` in the system is defined as not needing external information/context to be used or understood. This definition should not be read in absolute terms, but as a platonic attribute that `abstraction-projections` should aim for.
+
+`Self-describing` can be understood as a spectrum, where the more `self-describing` an `abstraction-projection` is the more capacity it has for interoperability and understanding (does not have contextual dependencies).
+
+The main mechanism used to achieve that is by nesting `abstraction-projections` (`notes`) inside `abstraction-projections`. This means that any element of a `Note` can in itself be a `Note` allowing for extremely complex nested objects.  Luckily [`IPLD`](https://ipld.io/docs/) perfectly matches the requirements to build these structures.
+
+The reason the word "nesting" is used as opposed to "linking" is because the references in a `note` are assumed to be part of the `note` as and not an outside thing. The nested `notes` have a "function" in regards to its super-`note` and they are needed for the super-`note` to be understood. This is very different from the hyperlink pointing to a "web page".
+
+
+The `self-describing` quality is manifested in multiple ways in the system.
+
+- `Self-describing note`: This is a quality that the author of a `note` should aim for, and is what allows the overall ontology to grow and be coherent. It can't be enforced by the system, but it can be incentivized.
+- `Self-describing type`: The "key" of each `note` `property` is nothing but an `abstraction-pointer` to the `type note`. A `type note` is a `note` that contains all the information to be processed by a computer (classic type system), but also the information to be semantically understood by a `mind`. The development of this type-system is one of the critical aspects of the development of the project.
+- `Self-describing text`: We can enable a system of [transclusions](https://en.wikipedia.org/wiki/Transclusion) where words, paragraphs and other text structures are nothing but the transcluded `properties` of a `note` and at the same time are pointers to that `note`. By having a semantic interface we can guarantee that the transclusion will still make sense in the future. This enables the capacity for each word to be `self-describing` which means that we do not need to rely on the ambiguous definitions of a global dictionary and instead we can create extremely explicit text where a resolution to its meaning can be added progressively. It also means that when writing /(an article for example) the required context is extremely mitigated, as each concept/word is self-explanatory. This type of text format is currently referred to as `interplanetary-text` and is one of the main focuses of exploration of the project.
 
 ## System Topology
 > While the main ideas are quite definitive, the specific details still change constantly and should not be taken as specifications. They are for illustrative purposes only.
@@ -108,7 +140,7 @@ A common question about the system is...
 > How to make any sense of anything if everything is concerning the semantics of a particular `mind` as opposed to an agreed understanding of the meaning of something?
 >
 The view in this regard is that an "agreed understanding" is an illusion and we should acknowledge it by being explicit on its representation, as opposed to embracing a fallacy of shared meaning. 
-If there is a "shared meaning" is a fuzzy one and emergent behaviour, as opposed to a, seek one.
+If there is a "shared meaning" is a fuzzy emergent behaviour, as opposed to an explicit sought one.
 
 ### Comparison with the Semantic Web
 Certain elements may seem similar to the `Semantic web` (and other similar protocols), but there are very significant differences:
@@ -120,16 +152,16 @@ Certain elements may seem similar to the `Semantic web` (and other similar proto
 
 ### Project philosophy
 - The system should aim to serve the particular `minds` of each individual and to enable them to reach the maximum potential as opposed to subordinate people to the system.
-- Because of its goals around recreating a fundamental information system, the project should be particularly aware of potentially misaligned incentives E.g., Funding, corporate use, mindsets with "current web paradigm"
+- Because of its goals around recreating a fundamental information system, the project has an almost religious relationship around the use of information and therefore should be particularly aware of potentially misaligned incentives E.g., funding, corporate use, mindsets with "current web paradigm", token mechanisms, partnerships...
 - The take on its design is at the very least singular and it does not fit within the established development paradigms as it requires first a conceptual understanding. The current strategy is to go back and forth between...
   1. Conceptual design
   2. Proof of concept development
-  3. Play, use, experimental
-    ... until the conceptual design matches the desired intent. Then start a solid development of the protocol.
+  3. Play, use, experiment
+    ... until the conceptual design matches the desired intent. Then stablish a strategy for the development of the protocol.
 
 # Pseudo Interplanetary mind-map (Pipmm)
 
-`Pseudo Interplanetary mind-map` is a proof a concept to play, understand and validate the previous assumptions. While the technical part is complex, there are a lesser amount of unknowns than its conceptual counterpart. That means that the challenge does not reside in its implementation but understanding and generating a conceptual framework to help to operate with the aforementioned assumptions.
+`Pseudo Interplanetary mind-map` is a proof of concept to play, understand and validate the previous assumptions. While the technical part is complex, there are a lesser amount of unknowns than its conceptual counterpart. That means that the challenge does not reside in its implementation but understanding and generating a conceptual framework to help to operate with the aforementioned assumptions.
 
 
 ## Overview
@@ -141,14 +173,14 @@ The following repositories compose the project:
 - `pipmm-cli`: An NPM package that helps to manipulate and compile the `abstractions` repo into the newly defined format, as well as to upload, serve and visualize them.
 - `pipmm-client`: A Flutter project to render the contents. `pipmm-cli`  uses it
 - `pipmm-server`: A simple Node server that plays the role of a node in the system. `pipmm-cli` uses it
-- `docs` (this repo): Most of the conceptual development is being dog fed in several users `abstractions` repositories, the system is currently too unstable serve as documentation itself, although that is the ultimate goal. The purpose of `pipmm-docs` is therefore to be a stable reference for the project in the meantime.
+- `docs` (this repo): Most of the conceptual development is being dog fed in several users `abstractions` repositories, the system is currently too unstable to serve as documentation itself, although that is the ultimate goal. The purpose of `pipmm-docs` is therefore to be a stable reference for the project in the meantime.
 
 
 ## Installation (WIP)
 0. Install base tooling
-   1. `Node`(v.) and `NPM`
+   1. `Node`>=8.0.0 and `NPM`
    2. VSCode
-   3. Foam ()
+   3. [Foam](https://foambubble.github.io/foam/)
 1. `npm install pipmm-cli -g`
 2. `git clone ...abstractions`
 3. `cd abstractions`
