@@ -19,14 +19,13 @@
 - [Pseudo Interplanetary mind-map (Pipmm)](#pseudo-interplanetary-mind-map-pipmm)
   - [Overview](#overview-1)
   - [Compromises](#compromises)
-  - [Usage](#usage)
   - [Repositories](#repositories)
   - [Installation (WIP)](#installation-wip)
 
 ## Overview
 
 The interplanetary mind map is a long term project that aims to explore and build tools and protocols to make digital human-to-human / human-to-self communication more efficient to minimize human conflict and maximize the capacity to understand complex information. It does it by building a protocol that endorses 2 fundamental assumptions:
-1. The meaning or understanding of information is unique to each mind, as it is the product of an extremely complex cloud of associations. The word `minformation`is used to make this explicit.
+1. The meaning or understanding of information is unique to each mind, as it is the product of an extremely complex cloud of associations. The word `minformation` is used to make this explicit.
 2. To maximize interoperability and understanding of information, digital projections of `minformation` should aim to be `self-describing`. This means that information should not require external context to be understood.
 
 These assumptions force digital information to be structured connected and nested in a different new way. It enables a new paradigm of computation and communication that revolves around the particular ontologies and `abstractions` of each mind allowing to adapt to each person needs, as opposed to subordinating people to the pre-assumptions, bias and incentives of software creators.
@@ -86,6 +85,7 @@ The `self-describing` quality is manifested in multiple ways in the system:
 
 - `Self-describing note`: This is a quality that the author of a `note` should aim for, and is what allows the overall ontology to grow and be coherent. It can't be enforced by the system, but it can be incentivized.
 - `Self-describing type`: The "key" of each `note` `property` is nothing but an `abstraction-pointer` to the `type note`. A `type note` is a `note` that contains all the information to be processed by a computer (classic type system), but also the information to be semantically understood by a `mind`. The development of this type-system is one of the critical aspects of the development of the project.
+- `Self-describing transforms`: `Transforms` are `notes` that can compute other `notes`. They can be filters, renders, parsers, functions... Being `self-describing` means that they don't have "dependencies". Any code they need must be in the `note`, either directly or in a nested `note`.
 - `Self-describing text`: We can enable a system of [transclusions](https://en.wikipedia.org/wiki/Transclusion) where words, paragraphs and other text structures are nothing but the transcluded `properties` of a `note` and at the same time are pointers to that `note`. By having a semantic interface we can guarantee that the transclusion will still make sense in the future. This enables the capacity for each word to be `self-describing` which means that we do not need to rely on the ambiguous definitions of a global dictionary and instead we can create extremely explicit text where a resolution to its meaning can be added progressively. It also means that when writing /(an article for example) the context required to make the point is extremely mitigated, as each concept/word is self-explanatory. This type of text format is currently referred to as `interplanetary-text` and is one of the main focuses of exploration of the project.
 
 ## System Topology
@@ -119,7 +119,6 @@ The `self-describing` quality is manifested in multiple ways in the system:
 - A `CID` is a cryptographic hash of the `IPLD` object of a `note`.
 - A `CID`is an immutable reference to an `abstraction-projection`.
 - A CID looks like this: `baguqeeragkrzqs7df67d2qiwedqw56glsmwrssjhsp25mujxx5vdbu5yqbzq`
-
 
 ### IID - Intent identifier
 - While the `CID`allows us to reference a snapshot of an `abstraction`, we still need a way to reference the evolving idea of an `abstraction`, the `abstraction-intent`.
@@ -165,15 +164,20 @@ Certain elements may seem similar to the `Semantic web` (and other similar proto
 # Pseudo Interplanetary mind-map (Pipmm)
 
 ## Overview
-`Pseudo Interplanetary mind-map` is a proof of concept to play, understand and validate the previous assumptions. While the technical part is complex, there are a lesser amount of unknowns than its conceptual counterpart. That means that currently the challenge does not reside in its implementation but understanding and generating a conceptual framework to help to operate with the aforementioned assumptions. `PIPMM`aims to help to generate this conceptual framework.
+`Pseudo Interplanetary mind-map` is a proof of concept to play, understand and validate the previous assumptions. While the technical part is complex, there are a lesser amount of unknowns than its conceptual counterpart. That means that currently the challenge does not reside in its implementation but understanding and generating a conceptual framework to help to operate with the aforementioned assumptions. `PIPMM`aims to help to generate this conceptual framework by providing a playground to play with.
 
+A big handicap at the current stage is to be able to play with complex information without having to build a special editor for it. To go around that `PIPMM` delegates this to existing tools and paradigmns.
+
+`PIPMM` can be thought as a translator or compiler. It takes a bunch of "old-school" skeuomorphic documents and links as a source and converts them into interconnected [IPLD](https://obsidian.md/) objects and `AREF`s
+
+The source files currently take the form of Markdowns with YAML Front Matter linked with wikilinks. This approach has been choosen in order to be as compatible as possible and therefore leverage the power of existing tools and personal knowledge repositories such as [Foam](https://foambubble.github.io/foam/) with VS Code  or [Obsidian](https://obsidian.md/) (not tested)
 
 ## Compromises
 > This software is for experimental purposes and is not meant for production or a general audience but for people that already have a significant pre-understanding of the project and want to explore its possibilities.
 
 `PIPMM` is optimized for:
 - Replicating the desired information architecture
-- Be able to demo and publish what can be done with it to a wider audience
+- Be able to demo and publish what can be done with it
 - Experiment with fast iterations focusing on the biggest unknowns
 - Live preview of the content produced, specially around `Interplanetary text`and `transclusions`
 
@@ -186,21 +190,15 @@ It is **NOT** optimized for:
 Therefore there are many compromizes:
 - There are no security checks, the software is quite vulnerable, it is meant to be used in trusted circles.
 - Can't reference `Notes` via its `CID`, only `IID`, which means is not possible to point to old versions of an `abstraction`
-- Is not possible to reference other people's `notes` only your own.
-- `Transforms`or `Renders`are hard-coded as oppose to defined in their own abstractions.
+- Is not possible to reference other people's `notes` only your own (to change soon)
+- `Transforms` or `Renders` are hard-coded as oppose to defined in their own abstractions.
 - Many cryptographic operations are just emulated.
-- Nothing is encrypted. The server stores the `notes`in plain text
-- There is not server authentication
+- Nothing is encrypted. The server stores the `notes` in plain text
+- There is no server authentication
 - The typing system is extremely simplified and just partially enforced with [IPLD Schemas](https://ipld.io/docs/schemas/) and  hard-coded references.
-- No support for media
+- No support for images or media
+- Web stack is used for fast development
 
-## Usage
-
-A big handicap at the current stage is to be able to play with complex information without having to build a special editor for it. To go around that `PIPMM` delegates this to existing tools and paradigmns.
-
-`PIPMM` can be thought as a translator or compiler. It takes a bunch of "old-school" skeuomorphic documents and links as a source and converts them into interconnected [IPLD](https://obsidian.md/) objects and `AREF`s
-
-The source files currently take the form of Markdowns with YAML Front Matter linked with wikilinks. This approach has been choosen in order to be as compatible as possible and therefore leverage the power of existing tools and personal knowledge repositories such as [Foam](https://foambubble.github.io/foam/) with VS Code  or [Obsidian](https://obsidian.md/) (not tested)
 
 ## Repositories
 The following repositories compose the project:
