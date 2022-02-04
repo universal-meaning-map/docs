@@ -19,6 +19,7 @@
 - [Pseudo Interplanetary mind-map (Pipmm)](#pseudo-interplanetary-mind-map-pipmm)
   - [Overview](#overview-1)
   - [Compromises](#compromises)
+  - [Usage](#usage)
   - [Repositories](#repositories)
   - [Installation (WIP)](#installation-wip)
 
@@ -166,6 +167,7 @@ Certain elements may seem similar to the `Semantic web` (and other similar proto
 ## Overview
 `Pseudo Interplanetary mind-map` is a proof of concept to play, understand and validate the previous assumptions. While the technical part is complex, there are a lesser amount of unknowns than its conceptual counterpart. That means that currently the challenge does not reside in its implementation but understanding and generating a conceptual framework to help to operate with the aforementioned assumptions. `PIPMM`aims to help to generate this conceptual framework.
 
+
 ## Compromises
 > This software is for experimental purposes and is not meant for production or a general audience but for people that already have a significant pre-understanding of the project and want to explore its possibilities.
 
@@ -190,17 +192,25 @@ Therefore there are many compromizes:
 - Nothing is encrypted. The server stores the `notes`in plain text
 - There is not server authentication
 - The typing system is extremely simplified and just partially enforced with [IPLD Schemas](https://ipld.io/docs/schemas/) and  hard-coded references.
+- No support for media
 
+## Usage
 
+A big handicap at the current stage is to be able to play with complex information without having to build a special editor for it. To go around that `PIPMM` delegates this to existing tools and paradigmns.
+
+`PIPMM` can be thought as a translator or compiler. It takes a bunch of "old-school" skeuomorphic documents and links as a source and converts them into interconnected [IPLD](https://obsidian.md/) objects and `AREF`s
+
+The source files currently take the form of Markdowns with YAML Front Matter linked with wikilinks. This approach has been choosen in order to be as compatible as possible and therefore leverage the power of existing tools and personal knowledge repositories such as [Foam](https://foambubble.github.io/foam/) with VS Code  or [Obsidian](https://obsidian.md/) (not tested)
 
 ## Repositories
 The following repositories compose the project:
 
-- `abstractions-template`: This is a template that users can use to play around and generate content. To be able to play with complex information without having to build a special editor for it the `abstractions` repo is built around `VS Code` in combination with [Foam](https://foambubble.github.io/foam/) and a [VS Code Snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets) and guidelines to help to format and manage the content in a particular way.
+- `abstractions-template`: This is a template that users can use to play around and generate content. 
 - [pipmm-cli](https://github.com/interplanetarymindmap/pipmm-cli): An NPM package that helps to manipulate and compile the `abstractions` repo into the newly defined format, as well as to upload, serve and visualize them.
 - [pipmm-client](https://github.com/interplanetarymindmap/pipmm-client): A Flutter project to render the contents. `pipmm-cli`  uses it
 - [pipmm-server](https://github.com/interplanetarymindmap/pipmm-server): A simple Node server that plays the role of a node in the system. `pipmm-cli` uses it
 - [docs](https://github.com/interplanetarymindmap/docs) (this repo): Most of the conceptual development is being dog fed in several users `abstractions` repositories, the system is currently too unstable to serve as documentation itself, although that is the ultimate goal. The purpose of `pipmm-docs` is therefore to be a stable reference for the project in the meantime.
+
 
 
 ## Installation (WIP)
