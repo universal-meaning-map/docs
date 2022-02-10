@@ -16,11 +16,11 @@
     - [Semantic consensus](#semantic-consensus)
     - [Comparison with the Semantic Web](#comparison-with-the-semantic-web)
     - [Project philosophy](#project-philosophy)
-- [Pseudo Interplanetary mind-map (Pipmm)](#pseudo-interplanetary-mind-map-pipmm)
+- [Pseudo Interplanetary mind-map (PIPMM)](#pseudo-interplanetary-mind-map-pipmm)
   - [Overview](#overview-1)
   - [Compromises](#compromises)
   - [Repositories](#repositories)
-  - [Installation (WIP)](#installation-wip)
+  - [Installation](#installation)
 
 ## Overview
 
@@ -161,7 +161,7 @@ Certain elements may seem similar to the `Semantic web` (and other similar proto
   3. Play, use, experiment
     ... until the conceptual design matches the desired intent. Then stablish a strategy for the development of the protocol.
 
-# Pseudo Interplanetary mind-map (Pipmm)
+# Pseudo Interplanetary mind-map (PIPMM)
 
 ## Overview
 `Pseudo Interplanetary mind-map` is a proof of concept to play, understand and validate the previous assumptions. While the technical part is complex, there are a lesser amount of unknowns than its conceptual counterpart. That means that currently the challenge does not reside in its implementation but understanding and generating a conceptual framework to help to operate with the aforementioned assumptions. `PIPMM`aims to help to generate this conceptual framework by providing a playground to play with.
@@ -179,7 +179,7 @@ The source files currently take the form of Markdowns with YAML Front Matter lin
 - Replicating the desired information architecture
 - Be able to demo and publish what can be done with it
 - Experiment with fast iterations focusing on the biggest unknowns
-- Live preview of the content produced, specially around `Interplanetary text`and `transclusions`
+- Live preview of the content produced, specially around `Interplanetary text` and `transclusions`
 
 It is **NOT** optimized for:
 
@@ -203,23 +203,27 @@ Therefore there are many compromizes:
 ## Repositories
 The following repositories compose the project:
 
-- `abstractions-template`: This is a template that users can use to play around and generate content. 
+- [abstractions-template](https://github.com/interplanetarymindmap/abstractions-template): This is a template that users can use to play around and generate content using VSCode or similar editor
 - [pipmm-cli](https://github.com/interplanetarymindmap/pipmm-cli): An NPM package that helps to manipulate and compile the `abstractions` repo into the newly defined format, as well as to upload, serve and visualize them.
-- [pipmm-client](https://github.com/interplanetarymindmap/pipmm-client): A Flutter project to render the contents. `pipmm-cli`  uses it
+- [pipmm-client](https://github.com/interplanetarymindmap/pipmm-client): A Flutter web-app to render the contents. `pipmm-cli`  uses it
 - [pipmm-server](https://github.com/interplanetarymindmap/pipmm-server): A simple Node server that plays the role of a node in the system. `pipmm-cli` uses it
-- [docs](https://github.com/interplanetarymindmap/docs) (this repo): Most of the conceptual development is being dog fed in several users `abstractions` repositories, the system is currently too unstable to serve as documentation itself, although that is the ultimate goal. The purpose of `pipmm-docs` is therefore to be a stable reference for the project in the meantime.
+- [docs](https://github.com/interplanetarymindmap/docs) (this repo): Most of the conceptual development is being dog fed in several users `abstractions` repositories, the system is currently too unstable to serve as documentation itself, although that is the ultimate goal. The purpose of [docs](https://github.com/interplanetarymindmap/docs) is therefore to be a stable reference for the project in the meantime.
 
 
 
-## Installation (WIP)
-0. Install base tooling
-   1. `Node`>=8.0.0 and `NPM`
-   2. VSCode
-   3. [Foam](https://foambubble.github.io/foam/)
-1. `npm install pipmm-cli -g`
-2. `git clone ...abstractions`
-3. `cd abstractions`
-4. `pipmm-cli init`
-5. `pipmm-cli watch`
-6. Go to `http://localhost:56565/#?localServerPort=45454&websocketsPort=34343&expr=[%22QmXPTSJee8a4uy61vhAs35tM5bXDomSmo1BbTMUVAVbAGJlzfmhs7a%22,[[%22QmXPTSJee8a4uy61vhAs35tM5bXDomSmo1BbTMUVAVbAGJ2lf4dbua%22,%22QmXPTSJee8a4uy61vhAs35tM5bXDomSmo1BbTMUVAVbAGJwf5rbuta%22]]]`
+## Installation
+
+Pre-requirements:
+- [Node.js](https://nodejs.dev/)
+- [VSCodium](https://vscodium.com/) or [Visual Studio Code](https://code.visualstudio.com/)
+
+Install:
+
+1. `git clone git@github.com:interplanetarymindmap/abstractions-template.git`
+2. Open `abstractions-template` in VSCode and install the recommended extensions
+3. `cd abstractions-template`
+4. `npm install pipmm-cli -g`
+5. `pipmm-cli init`
+6. `pipmm-cli watch`
+7. Open `http://localhost:56565/#?websocketsPort=34343&localServerPort=45454&expr=%5B%2212D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,%5B%5B%2212D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%2212D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cl5uz4zaq%22%5D%5D%5D`
 
