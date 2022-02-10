@@ -222,8 +222,8 @@ Install:
 1. `git clone git@github.com:interplanetarymindmap/abstractions-template.git`
 2. Open `abstractions-template` in VSCode and install the recommended extensions
 3. `cd abstractions-template`
-4. `npm install pipmm-cli -g`
-5. `pipmm-cli init`
-6. `pipmm-cli watch`
+4. `npm install pipmm -g`
+5. `pipmm init`
+6. `pipmm watch`
 7. Open `http://localhost:56565/#?websocketsPort=34343&localServerPort=45454&expr=%5B%2212D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,%5B%5B%2212D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%2212D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cl5uz4zaq%22%5D%5D%5D`
 
