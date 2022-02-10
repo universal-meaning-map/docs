@@ -170,7 +170,7 @@ A big handicap at the current stage is to be able to play with complex informati
 
 `PIPMM` can be thought as a translator or compiler. It takes a bunch of "old-school" skeuomorphic documents and links as a source and converts them into interconnected [IPLD](https://obsidian.md/) objects and `AREF`s
 
-The source files currently take the form of Markdowns with YAML Front Matter linked with wikilinks. This approach has been choosen in order to be as compatible as possible and therefore leverage the power of existing tools and personal knowledge repositories such as [Foam](https://foambubble.github.io/foam/) with VS Code  or [Obsidian](https://obsidian.md/) (not tested)
+The source files currently take the form of Markdowns with YAML Front Matter linked with wikilinks. This approach has been choosen in order to be as compatible as possible and therefore leverage the power of existing tools and personal knowledge repositories such as VS Code + Extensions  or [Obsidian](https://obsidian.md/) (not tested)
 
 ## Compromises
 > This software is for experimental purposes and is not meant for production or a general audience but for people that already have a significant pre-understanding of the project and want to explore its possibilities.
