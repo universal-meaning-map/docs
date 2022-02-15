@@ -21,6 +21,7 @@
   - [Compromises](#compromises)
   - [Repositories](#repositories)
   - [Installation](#installation)
+  - [Exploration](#exploration)
 
 ## Overview
 
@@ -179,7 +180,7 @@ The source files currently take the form of Markdowns with YAML Front Matter lin
 - Replicating the desired information architecture
 - Be able to demo and publish what can be done with it
 - Experiment with fast iterations focusing on the biggest unknowns
-- Live preview of the content produced, specially around `Interplanetary text` and `transclusions`
+- Live preview of the content produced, specially around [Interplanetary-text](interplanetary-text.md) and `transclusions`
 
 It is **NOT** optimized for:
 
@@ -227,3 +228,6 @@ Install:
 6. `pipmm watch`
 7. Open `http://localhost:56565/#?websocketsPort=34343&localServerPort=45454&expr=%5B%2212D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,%5B%5B%2212D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%2212D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cl5uz4zaq%22%5D%5D%5D`
 
+## Exploration
+
+The [Interplanetary-text](interplanetary-text.md) currently contains a detailed explanation of how all the above translates when applied to text
