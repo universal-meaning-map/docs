@@ -172,7 +172,7 @@ A big handicap at the current stage is to be able to play with complex informati
 
 The source files currently take the form of Markdowns with YAML Front Matter linked with wikilinks. This approach has been choosen in order to be as compatible as possible and therefore leverage the power of existing tools and personal knowledge repositories such as VS Code + Extensions  or [Obsidian](https://obsidian.md/) (not tested)
 
-## Compromises
+## Compromises 
 > This software is for experimental purposes and is not meant for production or a general audience but for people that already have a significant pre-understanding of the project and want to explore its possibilities.
 
 `PIPMM` is optimized for:
