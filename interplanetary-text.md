@@ -50,7 +50,7 @@ Represents the idea of "view" or "perspective" about something.
 }
 ```
 
-### The "blue" note**
+### The "blue" note
 `IID`: 12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c4snxjotq
 ```json
 {
@@ -83,6 +83,6 @@ For the runtime to render the expression in the example it will go through the f
 1. Parse the `interplanetary-text` expression and obtain the `abstraction-references`
 2. Parse the `abstraction-references` and obtain the `MID` and `LIID` of the transcluded notes ("car" and "blue") as well as for the transcluded properties ("name" and "view")
 3. For each note reference; request to its respective `MID` the `CID` for the corresponding `IID`
-4. Once the `CID`is received we can request its content to the IPFS network or to the MID itself
+4. Once the `CID` is received we can request its content to the IPFS network or to the MID itself
 5. With the content received we can look up the `properties` that the `aref` is pointing at.
 6. The runtime can now render the text by replacing each `abstraction-reference` with its respective transcluded text.
