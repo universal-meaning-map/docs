@@ -25,7 +25,7 @@
 
 ## Overview
 
-The interplanetary mind map is a long term project that aims to explore and build tools and protocols to make digital human-to-human / human-to-self communication more efficient to minimize human conflict and maximize the capacity to understand complex information. It does it by building a protocol that endorses 2 fundamental assumptions:
+The interplanetary mind map is a [long term project](history.md) that aims to explore and build tools and protocols to make digital human-to-human / human-to-self communication more efficient to minimize human conflict and maximize the capacity to understand complex information. It does it by building a protocol that endorses 2 fundamental assumptions:
 1. The meaning or understanding of information is unique to each mind, as it is the product of an extremely complex cloud of associations. The word `minformation` is used to make this explicit.
 2. To maximize interoperability and understanding of information, digital projections of `minformation` should aim to be `self-describing`. This means that information should not require external context to be understood.
 
@@ -171,7 +171,7 @@ A big handicap at the current stage is to be able to play with complex informati
 
 `PIPMM` can be thought as a translator or compiler. It takes a bunch of "old-school" skeuomorphic documents and links as a source and converts them into interconnected [IPLD](https://obsidian.md/) objects and `AREF`s
 
-The source files currently take the form of Markdowns with YAML Front Matter linked with wikilinks. This approach has been choosen in order to be as compatible as possible and therefore leverage the power of existing tools and personal knowledge repositories such as VS Code + Extensions  or [Obsidian](https://obsidian.md/) (not tested)
+The source files currently take the form of Markdowns with YAML Front Matter linked with wikilinks. This approach has been choosen in order to be as compatible as possible and therefore leverage the power of existing tools and personal knowledge repositories such as VS Code  or [Obsidian](https://obsidian.md/).
 
 ## Compromises 
 > This software is for experimental purposes and is not meant for production or a general audience but for people that already have a significant pre-understanding of the project and want to explore its possibilities.
@@ -200,8 +200,8 @@ Therefore there are many compromizes:
 - No support for images or media
 - Web stack is used for fast development
 
-
 ## Repositories
+
 The following repositories compose the project:
 
 - [abstractions-template](https://github.com/interplanetarymindmap/abstractions-template): This is a template that users can use to play around and generate content using VSCode or similar editor
@@ -210,13 +210,11 @@ The following repositories compose the project:
 - [pipmm-server](https://github.com/interplanetarymindmap/pipmm-server): A simple Node server that plays the role of a node in the system. `pipmm-cli` uses it
 - [docs](https://github.com/interplanetarymindmap/docs) (this repo): Most of the conceptual development is being dog fed in several users `abstractions` repositories, the system is currently too unstable to serve as documentation itself, although that is the ultimate goal. The purpose of [docs](https://github.com/interplanetarymindmap/docs) is therefore to be a stable reference for the project in the meantime.
 
-
-
 ## Installation
 
 Pre-requirements:
 - [Node.js](https://nodejs.dev/)
-- [VSCodium](https://vscodium.com/) or [Visual Studio Code](https://code.visualstudio.com/)
+- [VSCodium](https://vscodium.com/) or [Visual Studio Code](https://code.visualstudio.com/) or [Obsidian](https://obsidian.md/)
 
 Install:
 
