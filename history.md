@@ -29,7 +29,7 @@
 
 ### `2020`
 
-- The rise of "note-taking" projects such as[ Roam Reasearch](https://roamresearch.com/), [Obsidian](https://obsidian.md/) as well as methods such as [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) offer new perspectives around the organization of information were natural language has a lot more presence. In particular, we start emulating some of those constructs on top of [Foam](https://foambubble.github.io/foam/) which allows us to start experimenting with much more complex forms of data.
+- The rise of "note-taking" projects such as[ Roam Reasearch](https://roamresearch.com/), [Obsidian](https://obsidian.md/) as well as methods such as [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) offer new perspectives around the organization of information were natural language has a lot more presence. In particular, we start emulating some of those constructs on top of [Foam](https://foambubble.github.io/foam/) which allows us to start experimenting with much more complex forms of data. This leads to a much deeper exploration into [linguistics](https://en.wikipedia.org/wiki/Linguistics) and [semiotics](https://en.wikipedia.org/wiki/Semiotics)
 
 ### `2021`
 
