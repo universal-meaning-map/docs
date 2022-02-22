@@ -43,9 +43,7 @@ A similar thing happens when we try to understand complex information. The tools
 
 In both cases, a lot of noise is added and a lot of information is not even expressed due to the limitations of the mediums.
 
-The approach of `Interplanetary mind-map` is to be able to recreate a map of the `mind` in a digital form. With this digital ontology, it becomes easier to make sense of digital information as we remove a lot of the "noise" that comes from using systems that are not adapted to our particular `mind`. While the system is still constrained and will never be able to represent what we have in our heads it can get much closer than the current tools. 
-
-Now, we can share parts of this mind-map with others, so instead of simply using a word to refer to "car", we can share our entire cloud that a car represents, with all the associations that it has with it.
+The approach of `Interplanetary mind-map` is to be able to recreate a map of the `mind` in a digital form. With this digital ontology, it becomes easier to make sense of digital information as we remove a lot of the "noise" that comes from using systems that are not adapted to our particular `mind`. While the system is still constrained and will never be able to represent what we have in our heads it can get much closer than the current tools. With that, we can share parts of this mind-map with others, so instead of simply using a word to refer to "car", we can share the entire cloud of what a car represents us with its associations.
 
 We are enhancing communication efficiency because what we communicate carries "context", as opposed to just exchanging a "sign" that may have a very different meaning by the receiver. 
 
@@ -79,7 +77,7 @@ Example:
 
 The main mechanism used to achieve that is by nesting `abstraction-projections` (`notes`) inside `abstraction-projections`. This means that any element of a `Note` can in itself be a `Note` allowing for extremely complex nested objects.  Luckily [`IPLD`](https://ipld.io/docs/) perfectly matches the requirements to build these structures.
 
-The reason the word "nesting" is used as opposed to "linking" is because the references in a `note` are assumed to be part of the `note` and not an outside thing. The nested `notes` have a "function" in regards to its super-`note` and they are needed for the super-`note` to be understood. This is very different from the hyperlink pointing to a "web page".
+The reason the word "nesting" is used as opposed to "linking" is because the references in a `note` are assumed to be part of the `note` and not an outside thing. The nested `notes` have a "function" or a relationship with a quality in regards to its super-`note` and they are needed for the super-`note` to be understood. This is very different from the hyperlink pointing to a "web page".
 
 
 The `self-describing` quality is manifested in multiple ways in the system:
@@ -87,7 +85,7 @@ The `self-describing` quality is manifested in multiple ways in the system:
 - `Self-describing note`: This is a quality that the author of a `note` should aim for, and is what allows the overall ontology to grow and be coherent. It can't be enforced by the system, but it can be incentivized.
 - `Self-describing type`: The "key" of each `note` `property` is nothing but an `abstraction-pointer` to the `type note`. A `type note` is a `note` that contains all the information to be processed by a computer (classic type system), but also the information to be semantically understood by a `mind`. The development of this type-system is one of the critical aspects of the development of the project.
 - `Self-describing transforms`: `Transforms` are `notes` that can compute other `notes`. They can be filters, renders, parsers, functions... Being `self-describing` means that they don't have "dependencies". Any code they need must be in the `note`, either directly or in a nested `note`.
-- `Self-describing text`: We can enable a system of [transclusions](https://en.wikipedia.org/wiki/Transclusion) where words, paragraphs and other text structures are nothing but the transcluded `properties` of a `note` and at the same time are pointers to that `note`. By having a semantic interface we can guarantee that the transclusion will still make sense in the future. This enables the capacity for each word to be `self-describing` which means that we do not need to rely on the ambiguous definitions of a global dictionary and instead we can create extremely explicit text where a resolution to its meaning can be added progressively. It also means that when writing /(an article for example) the context required to make the point is extremely mitigated, as each concept/word is self-explanatory. This type of text format is currently referred to as `interplanetary-text` and is one of the main focuses of exploration of the project.
+- `Self-describing text`: We can enable a system of [transclusions](https://en.wikipedia.org/wiki/Transclusion) where words, paragraphs and other text structures are nothing but the transcluded `properties` of a `note` and at the same time are pointers to that `note`. By having a semantic interface we can guarantee that the transclusion will still make sense in the future. This enables the capacity for each word to be `self-describing` which means that we do not need to rely on the ambiguous definitions of a global dictionary and instead we can create extremely explicit text where a resolution to its meaning can be added progressively. It also means that when writing (an article for example) the context required to make the point is extremely mitigated, as each concept/word can be self-explanatory. This type of text format is currently referred to as [interplanetary-text](interplanetary-text.md) and is one of the main focuses of exploration of the project as is where semantics meet the classical type system or where the `mind` meets the computer.
 
 ## System Topology
 > While the main ideas are quite definitive, the specific details and namings still change constantly and should not be taken as specifications. They are for illustrative purposes only.
@@ -107,7 +105,7 @@ The `self-describing` quality is manifested in multiple ways in the system:
 - A `note` aims to represent an `abstraction` as accurately as possible, although is always a best effort.
 - A `note` is made of a list of arbitrary lengths of `predicates`. A `predicate` being a quality or attribute of the `abstraction`.
 - A `predicate` has the form of a key-value pair. The "key" is the `property` that can be understood as the how/verb/relationship/type...
-- A `note` is an [`IPLD`](https://ipld.io/docs/) object that points at other `IPLD` objects.
+- A `note` is an [`IPLD`](https://ipld.io/docs/) object.
 
 ### Property
 - A `property` (key) defines "how" the `note` relates to any other information (value)
@@ -219,7 +217,7 @@ Pre-requirements:
 Install:
 
 1. `git clone git@github.com:interplanetarymindmap/abstractions-template.git`
-2. Open `abstractions-template` in VSCode and install the recommended extensions
+2. Open `abstractions-template` in VSCode and install the recommended extensions ([Markdown Memo](https://marketplace.visualstudio.com/items?itemName=svsool.markdown-memo) and [Markdown Links](https://marketplace.visualstudio.com/items?itemName=tchayen.markdown-links) )
 3. `cd abstractions-template`
 4. `npm install pipmm -g`
 5. `pipmm init`
