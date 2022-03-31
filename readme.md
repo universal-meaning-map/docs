@@ -31,6 +31,8 @@ The interplanetary mind map is a [long term project](history.md) that aims to ex
 
 These assumptions force digital information to be structured connected and nested in a different new way. It enables a new paradigm of computation and communication that revolves around the particular ontologies and `abstractions` of each mind allowing to adapt to each person needs, as opposed to subordinating people to the pre-assumptions, bias and incentives of software creators.
 
+The `Interplanetary mind-map` aims to create a conceptual framework that is representative of the natural flow of `minformation` to later be mapped into a technical implementation.
+
 ## Communication efficiency
 
 Human conflict arises when there is miscommunication: when we lack context when we lack empathy when we misunderstand... If communication aims for a lossless transfer of information we miscommunicate all the time.
@@ -52,20 +54,20 @@ Instead of being forced to a "linear" medium we now have graphs, and while the c
 
 ## Minformation terminology
 
-- `abstraction`: Is the atomic part of `minformation`. Anything that a `mind` can make sense of, can be encapsulated as an `abstraction`. It exists only in a particular `mind` at a given time. It can't ever be expressed nor represented fully. It is dynamic, constantly changing as we add more associations to it.
-- `abstraction projection`: Is a representation attempt of an `abstraction`, it is inherently incomplete and distorted. 
-- `abstraction intent`: A `abstraction` is dynamic, it can be understood as the state of a concept in a given time for a given mind. The `abstraction intent` is a static container where this concept lives, always pointing to its latest version. Is what we usually refer to in our daily communications.
+- `mind-abstraction`: Is the atomic part of `minformation`. Anything that a `mind` can make sense of, can be encapsulated as an `mind-abstraction`. It exists only in a particular `mind` at a given time. It can't ever be expressed nor represented fully. It is dynamic, constantly changing as we add more associations to it.
+- `abstraction projection`: Is a representation attempt of an `mind-abstraction`, it is inherently incomplete and distorted. 
+- `abstraction intent`: A `mind-abstraction` is dynamic, it can be understood as the state of a concept in a given time for a given mind. The `abstraction intent` is a static container where this concept lives, always pointing to its latest version. Is what we usually refer to in our daily communications.
 - `abstraction pointer`: Is what we use to refer to an `abstraction intent`. We do that all the time with symbols and words (signs), these are `abstraction pointers`.
 
 Example:
 
-> Each of us has a different idea of what a car is. There is a cloud of experiences, associations and understandings that conforms to our understanding of a car. This cloud, in a particular moment, for a particular mind is an `abstraction`.
+> Each of us has a different idea of what a car is. There is a cloud of experiences, associations and understandings that conforms to our understanding of a car. This cloud, in a particular moment, for a particular mind is an `mind-abstraction`.
 > 
 > If I try to explain what a car is to you, I will only be able to express part of the cloud that I have in my head, there are things that I don't remember, there are associations of the car that I have that I'm not aware of, I'm limited on time for what I can express, and even if I could do the above the limits of the language will only be able to communicate part of it. That's why any expression of what a car means to me is just an `abstraction projection`. 
 >
-> Despite an `abstraction` being not representable and constantly evolving we still can refer to a "car". There is a "container" that we can point at, and therefore does not change, it holds the evolving idea of the car. This container is the `abstraction intent`.
+> Despite an `mind-abstraction` being not representable and constantly evolving we still can refer to a "car". There is a "container" that we can point at, and therefore does not change, it holds the evolving idea of the car. This container is the `abstraction intent`.
 > 
-> When we communicate, we use the word "car". This is an `abstraction pointer` to the `abstraction intent` of a car. It doesn't point to the `abstraction` itself as it is only a snapshot in time. An `abstraction intent` can have many `abstraction pointers`, a picture of a car or even a memory can also be `abstraction pointers`
+> When we communicate, we use the word "car". This is an `abstraction pointer` to the `abstraction intent` of a car. It doesn't point to the `mind-abstraction` itself as it is only a snapshot in time. An `abstraction intent` can have many `abstraction pointers`, a picture of a car or even a memory can also be `abstraction pointers`
 
 
 ## Self-describing
@@ -88,8 +90,8 @@ The `self-describing` quality is manifested in multiple ways in the system:
 - `Self-describing text`: We can enable a system of [transclusions](https://en.wikipedia.org/wiki/Transclusion) where words, paragraphs and other text structures are nothing but the transcluded `properties` of a `note` and at the same time are pointers to that `note`. By having a semantic interface we can guarantee that the transclusion will still make sense in the future. This enables the capacity for each word to be `self-describing` which means that we do not need to rely on the ambiguous definitions of a global dictionary and instead we can create extremely explicit text where a resolution to its meaning can be added progressively. It also means that when writing (an article for example) the context required to make the point is extremely mitigated, as each concept/word can be self-explanatory. This type of text format is currently referred to as [interplanetary-text](interplanetary-text.md) and is one of the main focuses of exploration of the project as is where semantics meet the classical type system or where the `mind` meets the computer.
 
 ## System Topology
-> While the main ideas are quite definitive, the specific details and namings still change constantly and should not be taken as specifications. They are for illustrative purposes only.
-
+> While the main ideas are quite definitive, the specific details and namings still change constantly and should not be taken as specifications. They are for illustrative purposes only. 
+![Overview of IPMM by Lydia Law Li](images/IPMM_overview_by_Ly.jpeg)
 ### Node
 - The system tries to mimic the behaviour of `minformation` in the analogue world. Because the origin of `minformation` is on each mind, a `mind` is represented in the system.
 - A `mind` is the source of the `abstraction projections`, currently referred to as `notes`.
@@ -102,8 +104,8 @@ The `self-describing` quality is manifested in multiple ways in the system:
 
 ### Note
 - An instance of an `abstraction-projection` in the system is currently referred to as `note`.
-- A `note` aims to represent an `abstraction` as accurately as possible, although is always a best effort.
-- A `note` is made of a list of arbitrary lengths of `predicates`. A `predicate` being a quality or attribute of the `abstraction`.
+- A `note` aims to represent an `mind-abstraction` as accurately as possible, although is always a best effort.
+- A `note` is made of a list of arbitrary lengths of `predicates`. A `predicate` being a quality or attribute of the `mind-abstraction`.
 - A `predicate` has the form of a key-value pair. The "key" is the `property` that can be understood as the how/verb/relationship/type...
 - A `note` is an [`IPLD`](https://ipld.io/docs/) object.
 
@@ -120,11 +122,11 @@ The `self-describing` quality is manifested in multiple ways in the system:
 - A CID looks like this: `baguqeeragkrzqs7df67d2qiwedqw56glsmwrssjhsp25mujxx5vdbu5yqbzq`
 
 ### IID - Intent identifier
-- While the `CID`allows us to reference a snapshot of an `abstraction`, we still need a way to reference the evolving idea of an `abstraction`, the `abstraction-intent`.
-- The `IID`is the identifier of the container of an `abstraction`.
-- An `IID` is always mapped to the latest `CID`of a given `abstraction`.
+- While the `CID`allows us to reference a snapshot of an `mind-abstraction`, we still need a way to reference the evolving idea of an `mind-abstraction`, the `abstraction-intent`.
+- The `IID`is the identifier of the container of an `mind-abstraction`.
+- An `IID` is always mapped to the latest `CID`of a given `mind-abstraction`.
 - An `IID`is composed of a `MID`and the `LIID`(`Local Intent identifier`)`.
-- An  `IID` looks like this: `QmXPTSJee8a4uy61vhAs35tM5bXDomSmo1BbTMUVAVbAGJsdqwz4ea`, the 46 first characters representing the `MID` and the latest 8 representing the `LIID`
+- An  `IID` looks like this: `QmXPTSJee8a4uy61vhAs35tM5bXDomSmo1BbTMUVAVbAGJsdqwz4ea`, the 46 first characters representing the `MID` and the latest 8 representing the `LIID`  
 ![Intent identifier mapping timeline](images/abstraction_timeline.png)
 
 ### AREF - Abstraction reference
