@@ -90,7 +90,8 @@ The `self-describing` quality is manifested in multiple ways in the system:
 - `Self-describing text`: We can enable a system of [transclusions](https://en.wikipedia.org/wiki/Transclusion) where words, paragraphs and other text structures are nothing but the transcluded `properties` of a `note` and at the same time are pointers to that `note`. By having a semantic interface we can guarantee that the transclusion will still make sense in the future. This enables the capacity for each word to be `self-describing` which means that we do not need to rely on the ambiguous definitions of a global dictionary and instead we can create extremely explicit text where a resolution to its meaning can be added progressively. It also means that when writing (an article for example) the context required to make the point is extremely mitigated, as each concept/word can be self-explanatory. This type of text format is currently referred to as [interplanetary-text](interplanetary-text.md) and is one of the main focuses of exploration of the project as is where semantics meet the classical type system or where the `mind` meets the computer.
 
 ## System Topology
-> While the main ideas are quite definitive, the specific details and namings still change constantly and should not be taken as specifications. They are for illustrative purposes only. 
+> While the main ideas are quite definitive, the specific details and namings still change constantly and should not be taken as specifications. They are for illustrative purposes only.
+
 ![Overview of IPMM by Lydia Law Li](images/IPMM_overview_by_Ly.jpeg)
 ### Node
 - The system tries to mimic the behaviour of `minformation` in the analogue world. Because the origin of `minformation` is on each mind, a `mind` is represented in the system.
