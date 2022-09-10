@@ -19,7 +19,7 @@
 
 ### `2019`
 
-- [Presentation of Interplanetary Mind Map at IPFS meetup](http://www.youtube.com/watch?v=R4D8xT_KNP8)  
+- [Presentation of Interplanetary Mind Map at IPFS meetup](https://www.youtube.com/watch?v=OY22uTUaL2Q)  
 [![Interplanetary Mind Map at IPFS meetup  (2019)](https://img.youtube.com/vi/OY22uTUaL2Q/0.jpg)](https://www.youtube.com/watch?v=OY22uTUaL2Q)
 
 - At [IPFS Camp 2019](https://camp.ipfs.io/) we host a deconf session around "decentralized personal knowledge graphs" and became to know many projects working on similar ideas. 
