@@ -9,7 +9,7 @@
         - [Meaning in reasoning](#meaning-in-reasoning)
         - [Capturing meaning](#capturing-meaning)
     - [Everything is an abstraction](#everything-is-an-abstraction)
-    - [Information should aim to be `self-describing`](#information-should-aim-to-be-self-describing)
+    - [Information should aim to be self-describing](#information-should-aim-to-be-self-describing)
         - [Self-describing data structure](#self-describing-data-structure)
         - [Instances of self-description](#instances-of-self-description)
     - [System topology](#system-topology)
@@ -19,7 +19,7 @@
         - [Property](#property)
         - [CID - Content identifier](#cid---content-identifier)
         - [IID - Intent identifier](#iid---intent-identifier)
-        - [AREF - Abstraction reference](#aref---abstraction-reference)
+        - [AREF - `Abstraction` reference](#aref---abstraction-reference)
     - [FAQ](#faq)
         - [Semantic consensus](#semantic-consensus)
         - [Comparison with the Semantic Web](#comparison-with-the-semantic-web)
@@ -30,6 +30,7 @@
     - [Repositories](#repositories)
     - [Installation](#installation)
     - [Exploration](#exploration)
+- [Get in touch](#get-in-touch)
 
 ## Overview
 
@@ -37,14 +38,14 @@ The `Interplanetary mind-map` (`IPMM`) is a [long term project](history.md) that
 
 `IPMM` endorses 3 fundamental assumptions:
 
-1. **`Meaning` is subjective**  
+1. [Meaning is subjective](#meaning-is-subjective)  
     The `meaning` given to specific `information` set is unique to each mind, as it is the product of an extremely complex cloud of associations. The word `minformation` is used to make this explicit. We need a system that aligns to each subject's `meaning`.
-2. **Everything is an abstraction**  
-    The single most fundamental form to manage complexity are abstractions. `Abstraction malleability` (facilitating their access, creation, re-use, maintenance and evolution) is fundamental to maximize their quality (the signal-to-noise ratio they can capture for their specific purpose).
-3. **`Information` should aim to be `self-describing`**  
+2. [Everything is an abstraction](#everything-is-an-abstraction)  
+    The single most fundamental form to manage complexity are `abstractions`. `Abstraction malleability` (facilitating their access, creation, re-use, maintenance and evolution) is fundamental to maximize their quality (the signal-to-noise ratio they can capture for their specific purpose).
+3. [Information should aim to be self-describing](#information-should-aim-to-be-self-describing)  
    To capture complexity and maximize interoperability, composability and understanding of information, there can't be external dependencies, `information` should not require external context to be used, computed or understood.
 
-These assumptions force digital `information` to be structured connected and nested in a different new way. It enables a new paradigm of computation and communication that revolves around the particular ontologies and abstractions (language) of each mind allowing to adapt to each person needs, as opposed to subordinating people to the pre-assumptions, bias and incentives of software creators.
+These assumptions force digital `information` to be structured connected and nested in a different new way. It enables a new paradigm of computation and communication that revolves around the particular ontologies and `abstractions` (language) of each mind allowing to adapt to each person needs, as opposed to subordinating people to the pre-assumptions, bias and incentives of software creators.
 
 ### Current stage
 
@@ -55,7 +56,7 @@ Currently, `Interplanetary mind-map` aims to create a conceptual framework that 
 On terminology:
 > `IPMM` uses a lot of unique terminology and a particular narrowed meaning in certain words, this is necessary in order to make explicit certain subtleties within the framework. For a new reader, it may be confusing to read. In the future, likely, the terminology can be simplified, but at the current stage, while developing the conceptual, framework is necessary to optimize for the semantic-clarity of those who work with it.
 
-> Many references of this documentation are pointing to [my personal instance](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22]]]&) of it (Xavi's), where more up-to-date and extensive definitions can be found.
+> Many references of this documentation are pointing to [my personal instance](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22]]]&) (Xavi's), where more up-to-date and extensive definitions can be found.
 
 ## Meaning is subjective
 
@@ -73,13 +74,13 @@ While the grammar of a language allow us to represent it in a "standardized" way
 
 Example:
 > An article on a newspaper is `information`. It is `data` sitting there awaiting to be read.
-> When someone reads the text, the `information` becomes subjective based on the subject's political views, preexisting knowledge, current emotional state, authorship of the article, all the associations with each word in the text... The `data` is now `minformation` instead. The product of the `minformation` with all the associations that had conditioned its interpretation conforms the `meaning` that subject gives to that text.
+> When someone reads the text, the `information` becomes subjective based on the subject's political views, preexisting knowledge, current emotional state, authorship of the article, all the associations with each word in the text... The `data` is now `minformation` instead. The product of the `minformation` with all the associations that had conditioned its interpretation conforms the `meaning` that subject gives to that article.
 
 ### Meaning in communication
 
 Natural language requires to have a significant degree of [shared meaning](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cgwyycz5q%22]]]&) between its users, otherwise communication wouldn't be possible.
 
-Because using the same words may apparently seem that we understand the same thing it is common to fall into a [fallacy of shared meaning](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cgpk6ijkq%22]]]&), which is a root problem of most communication issues.
+Reading the same words may have the effect of seeming that seem that two subjects will understand the same thing. This [fallacy of shared meaning](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cgpk6ijkq%22]]]&) is the root cause of most communication issues.
 
 `Interplanetary mind-map` enables to make explicit the difference in `meaning` between subjects, minimizing miscommunication and conflict by providing tools to map each-other's `meaning`.
 
@@ -87,13 +88,13 @@ Because using the same words may apparently seem that we understand the same thi
 
 Having `shared meaning` is a virtue for communication but its a huge drawback for thinking.
 
-The quality of our reasoning is directly tight to the quality of our abstractions. Using "common language" abstractions constrain the creation and evolution of unique abstractions that can better fullfil our particular needs.
+The quality of our reasoning is directly tight to the quality of our `abstractions`. The use of "common language" `abstractions` constrains the creation and evolution of our own unique `abstractions` that can better fullfil our particular needs.
 
-With a system that supports us in expressing our particular `meaning` around a concept, we would be able to be in full control of our own particular abstractions, better capturing our reality and enhancing our reasoning.
+With a system that supports us in expressing our particular `meaning` around a concept, we become in in full control of our own particular `abstractions`, better capturing our reality and enhancing our reasoning.
 
-Currently any piece of software uses the same set of abstractions for all its user base. This translates into only allowing its users to transform, compute, visualize and make sense of information based on the scenarios and needs that the software creators have considered.
+Similarly, any piece of software uses the same set of `abstractions` for all its user base (user interface, functions, options, visualizations...). This translates into only allowing its users to transform, compute, visualize and make sense of information based on the scenarios and needs that the software creators have considered.
 
-`Interplanetary mind-map` recognizes that humans operate with `minformation` and not `information`, and to maximize our particular virtues the system should be build around our particular abstractions.
+`Interplanetary mind-map` recognizes that humans operate with `minformation` and not `information`, and to maximize our particular virtues the system should be build around our particular `abstractions`.
 
 ### Capturing meaning
 
@@ -102,7 +103,7 @@ Currently any piece of software uses the same set of abstractions for all its us
 - [meaning unit](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3chp6gtfwq%22]]]&): It is meaning of a given object at a given time by a given subject.
 - [meaning unit projection](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdeplwy4q%22]]]&): Is a representation attempt of a `meaning unit`, it is inherently incomplete and distorted, usually expressed in the form of language.
 - [intended meaning](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cz6zpqnbq%22]]]&): It is the `meaning unit` that a `meaning projection` aims to express.
-- [meaning unit pointer](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c6ardl2ma%22]]]&): A sign, a set of data that when interpreted makes the subject recall a specific `meaning-unit`
+- [meaning unit pointer](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c6ardl2ma%22]]]&): A sign, a set of data that when interpreted makes the subject recall a specific `meaning-unit`.
 - [meaning unit continuity essence](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cqkp7a4ja%22]]]&): The `minformation` set of a `meaning-unit` that does not change and allows for the `meaning-unit` to evolve while keep being referred by its `meaning unit pointers`.
 
 Example:
@@ -117,27 +118,38 @@ Example:
 
 ## Everything is an abstraction
 
-Natural language is the higher form humans have to capture a reality. Every single `word` is an abstraction pointing to huge amounts of `meaning` without having to directly handle the complexity that they represent.
+We can't directly perceive reality. Our sensory receptors filter specific ranges of light, sound, touch... corresponding organs may do further processing, up until we can interpret information with our conscious and unconscious minds. At every step in that path, `minformation` is reduced and transformed in the form of `abstractions`.
 
-By composing clauses made of `words` we can capture even larger amount of complexity that better describe the meaningful elements of reality . We can then wrap these clauses as new abstractions to further compress complexity (ideas, models, frameworks...). This nesting process can continue indefinitely,  creating higher level abstractions without any upper bound.
+- [Abstraction](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cnnjsotia%22]]]&): An `abstraction` is the expression of a pattern of information that captures the essence that allows it to better serve in the specific context where is used. An `abstraction` is the product of computation, where input information is reduced, transformed and re-grouped to increase the signal-to-noise enabling to to deal with greater complexity.
 
 Example:
-> A "car" is a complex object, composed of many parts, that uses complex physics and technology to function. By using the word "car" we can relate to it without having to relate to its complexity.
-> A clause like "my dad's car", is in itself a higher level abstraction, representing more complexity than the word "car" on its own.
+> We are constantly sensing light and sound, but not all of its is perceived equal. We ignore some signals and enhance others (improving signal-to-noise ratio). We can isolate the visual shape and the sound of a "car" within it surroundings recognizing it as a 3D object (improving signal-to-noise ratio). Each signal-to-noise ratio improvement produces an abstraction.
 
-Language and words are not the only systems we have to generate abstractions. Anything that we can conceive and have some "boundaries" can be understood as an abstraction.
+Natural language is the higher form humans have to express reality. A `word` is short and simple but its pointing to huge amounts of `meaning` without having to directly handle the complexity that they represent.
 
-A computation is essentially the process of generating better abstractions, simplifying an aspect of reality to facilitate our relationship with it. But the  computation in itself can also be conceive as abstraction that transforms abstractions, making  code, functions, apps or machine learning models abstractions as well.
+By composing clauses made of `words` we can capture even larger amount of complexity that better describe the meaningful elements of reality . We can wrap these clauses as new `abstractions` to further compress complexity (ideas, models, frameworks...). This nesting process can continue indefinitely,  creating higher level `abstractions` without no upper bound.
 
-In `IPMM` everything is made of abstractions representing `meaning units`, and the system supports its evolution and maintenance.
+Language can be understood as a formal system of `abstraction` composition, that produces higher-level `abstractions` as a result.
 
-## Information should aim to be `self-describing`
+Example:
+> A "car" is a 3D object with specific shape and sound, composed of many parts, that uses complex physics and technology to function. By using the word "car" we can relate to it without having to relate to its complexity.
+> A clause like "a Tesla", is in itself a higher level abstraction, representing more complexity than the word "car" on its own.
 
-`Self-describing` in `IPMM` is defined as not needing external information/context to be used or understood. This definition should not be read in absolute terms, but as a platonic attribute that any abstraction should aim for.
+Language and words are not the only systems we have to generate `abstractions`. Anything that we can conceive and have some "boundaries" can be understood as an `abstraction`.
 
-`Self-describing` can be understood as a spectrum, where the more `self-describing` an abstraction of a `meaning unit projection` is, the more capacity to be interoperable and understood is (does not have contextual dependencies).
+A computation is essentially the process of generating better `abstractions`, simplifying an aspect of reality to facilitate our relationship with it. But the  computation in itself can also be conceive as `abstraction` that transforms `abstractions`, making  code, functions, apps or machine learning models `abstractions` as well.
 
-`IPMM` architecture is design so that the `meaning unit pointer` (mostly but not exclusively "words")  can't be separated from the `meaning` or `computation` given by the particular `mind` that created them. Every piece of `information` in the system carries all what is necessary to be computed or understood within itself.
+In `IPMM` anything that has `meaning` can be encapsulated as an `abstraction`, which means that everything can have digital representation, forming a map of our personal ontology of the world in a digital form.
+
+Facilitating a coherent creation, evolution, re-use, and maintenance of `abstractions`, that map into how we think, is what enables better reasoning and communication, and the goal of `IPMM` is to support this process.
+
+## Information should aim to be self-describing
+
+`Self-describing` in `IPMM` is defined as not needing external information/context to be used or understood. This definition should not be read in absolute terms, but as a platonic attribute that any `abstraction` should aim for.
+
+`Self-describing` can be understood as a spectrum, where the more `self-describing` an `abstraction` of a `meaning unit projection` is, the more capacity to be interoperable and understood is (does not have contextual dependencies).
+
+`IPMM` architecture is designed so that the `meaning unit pointer` (mostly but not exclusively "words")  can't be separated from the `meaning` or `computation` given by the particular `mind` that created them. Every piece of `information` in the system carries all what is necessary to be computed or understood within itself.
 
 ### Self-describing data structure
 
@@ -209,7 +221,7 @@ The `self-describing` quality is manifested in multiple ways in the system:
 - An  `IID` looks like this: `QmXPTSJee8a4uy61vhAs35tM5bXDomSmo1BbTMUVAVbAGJsdqwz4ea`, the 46 first characters representing the `MID` and the latest 8 representing the `LIID`  
 ![Intent identifier mapping timeline](images/abstraction_timeline.png)
 
-### AREF - Abstraction reference
+### AREF - `Abstraction` reference
 
 - The `AREF` is a text expression that allows us to point to any element of the system.
 - Is the equivalent of what `hyperlink` is to the `hypertext`
@@ -223,8 +235,8 @@ The `self-describing` quality is manifested in multiple ways in the system:
 
 How to make any sense of anything if everything is in relation of the meaning of a particular `mind` as opposed to an agreed understanding of the meaning of something?
 
-"[Shared meaning](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cgwyycz5q%22]]]&
-)" is only partial and we should acknowledge it by being explicit on its representation, as opposed to embracing a [fallacy of shared meaning](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cgpk6ijkq%22]]]&).
+[Shared meaning](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cgwyycz5q%22]]]&
+) is only partial and we should acknowledge it by being explicit on its representation, as opposed to embracing a [fallacy of shared meaning](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cgpk6ijkq%22]]]&).
 If there is "shared meaning",  it is a partial overlap of fuzzy associations.
 
 ### Comparison with the Semantic Web
@@ -291,7 +303,7 @@ Therefore there are many compromises:
 The following repositories compose the project:
 
 - [abstractions-template](https://github.com/interplanetarymindmap/abstractions-template): This is a template that users can use to play around and generate content using VSCode or similar editor
-- [pipmm-cli](https://github.com/interplanetarymindmap/pipmm-cli): An NPM package that helps to manipulate and compile the abstractions repo into the newly defined format, as well as to upload, serve and visualize them.
+- [pipmm-cli](https://github.com/interplanetarymindmap/pipmm-cli): An NPM package that helps to manipulate and compile the `abstractions` repo into the newly defined format, as well as to upload, serve and visualize them.
 - [pipmm-client](https://github.com/interplanetarymindmap/pipmm-client): A Flutter web-app to render the contents. `pipmm-cli`  uses it
 - [pipmm-server](https://github.com/interplanetarymindmap/pipmm-server): A simple Node server that plays the role of a node in the system. `pipmm-cli` uses it
 - [docs](https://github.com/interplanetarymindmap/docs) (this repo): Current conceptual development its been done using PIPMM itself and partially accessible on the [prototype site](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22]]]&). Since the system is currently too unstable to serve as documentation source, the purpose of [docs](https://github.com/interplanetarymindmap/docs) is to be a stable documentation reference (although highly incomplete) in the meantime.
@@ -306,7 +318,7 @@ Install:
 
 1. `git clone git@github.com:interplanetarymindmap/abstractions-template.git`
 2. Open `abstractions-template` in VSCode and install the recommended extensions ([Markdown Memo](https://marketplace.visualstudio.com/items?itemName=svsool.markdown-memo) and [Markdown Links](https://marketplace.visualstudio.com/items?itemName=tchayen.markdown-links) )
-3. `cd abstractions-template`
+3. `cd`abstractions`-template`
 4. `npm install pipmm -g`
 5. `pipmm init`
 6. `pipmm watch`
@@ -315,3 +327,7 @@ Install:
 ## Exploration
 
 The [Interplanetary-text](interplanetary-text.md) currently contains a detailed explanation of how all the above translates when applied to text
+
+# Get in touch
+
+`Interplanetary mind-map` is in constant evolution and growth and requires input from many disciplines. If you've got this far reading [I would love to talk to you](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cwx4lcc2a%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cbeeppy5a%22]]]&). :)
