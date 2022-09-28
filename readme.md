@@ -12,7 +12,7 @@
     - [Information should aim to be self-describing](#information-should-aim-to-be-self-describing)
         - [Self-describing data structure](#self-describing-data-structure)
         - [Instances of self-description](#instances-of-self-description)
-    - [System topology](#system-topology)
+    - [Technical mapping](#technical-mapping)
         - [Node](#node)
         - [MID - Mind identifier](#mid---mind-identifier)
         - [Note](#note)
@@ -34,7 +34,7 @@
 
 ## Overview
 
-The `Interplanetary mind-map` (`IPMM`) is a [long term project](history.md) that aims to build a system of information that to deal with extremely large levels of complexity, unattainable with current software architectures, and consequently increase our reasoning and communication capacities at individual and collective levels.
+The `Interplanetary mind-map` (`IPMM`) is a [long term project](history.md) that aims to build a system of information that deals with extremely large levels of complexity, unattainable with current software architectures, and consequently increase our reasoning and communication capacities at individual and collective levels.
 
 `IPMM` endorses 3 fundamental assumptions:
 
@@ -56,7 +56,7 @@ Currently, `Interplanetary mind-map` aims to create a conceptual framework that 
 On terminology:
 > `IPMM` uses a lot of unique terminology and a particular narrowed meaning in certain words, this is necessary in order to make explicit certain subtleties within the framework. For a new reader, it may be confusing to read. In the future, likely, the terminology can be simplified, but at the current stage, while developing the conceptual, framework is necessary to optimize for the semantic-clarity of those who work with it.
 
-> Many references of this documentation are pointing to [my personal instance](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22]]]&) (Xavi's), where more up-to-date and extensive definitions can be found.
+> Many references of this documentation are pointing to [my personal instance](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22]]]&) (Xavi's) of `PIPMM`, where more up-to-date and extensive definitions can be found.
 
 ## Meaning is subjective
 
@@ -94,7 +94,7 @@ With a system that supports us in expressing our particular `meaning` around a c
 
 Similarly, any piece of software uses the same set of `abstractions` for all its user base (user interface, functions, options, visualizations...). This translates into only allowing its users to transform, compute, visualize and make sense of information based on the scenarios and needs that the software creators have considered.
 
-`Interplanetary mind-map` recognizes that humans operate with `minformation` and not `information`, and to maximize our particular virtues the system should be build around our particular `abstractions`.
+`Interplanetary mind-map` recognizes that humans operate with `minformation` and not `information`, and to maximize our particular virtues, the system should be build around our particular `meaning`.
 
 ### Capturing meaning
 
@@ -103,7 +103,7 @@ Similarly, any piece of software uses the same set of `abstractions` for all its
 - [meaning unit](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3chp6gtfwq%22]]]&): It is meaning of a given object at a given time by a given subject.
 - [meaning unit projection](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdeplwy4q%22]]]&): Is a representation attempt of a `meaning unit`, it is inherently incomplete and distorted, usually expressed in the form of language.
 - [intended meaning](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cz6zpqnbq%22]]]&): It is the `meaning unit` that a `meaning projection` aims to express.
-- [meaning unit pointer](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c6ardl2ma%22]]]&): A sign, a set of data that when interpreted makes the subject recall a specific `meaning-unit`.
+- [meaning unit pointer](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c6ardl2ma%22]]]&): A sign, a word, a set of data that when interpreted makes the subject recall a specific `meaning-unit`.
 - [meaning unit continuity essence](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cqkp7a4ja%22]]]&): The `minformation` set of a `meaning-unit` that does not change and allows for the `meaning-unit` to evolve while keep being referred by its `meaning unit pointers`.
 
 Example:
@@ -125,7 +125,10 @@ We can't directly perceive reality. Our sensory receptors filter specific ranges
 Example:
 > We are constantly sensing light and sound, but not all of its is perceived equal. We ignore some signals and enhance others (improving signal-to-noise ratio). We can isolate the visual shape and the sound of a "car" within it surroundings recognizing it as a 3D object (improving signal-to-noise ratio). Each signal-to-noise ratio improvement produces an abstraction.
 
-Natural language is the higher form humans have to express reality. A `word` is short and simple but its pointing to huge amounts of `meaning` without having to directly handle the complexity that they represent.
+Humans are unique in their capacity to create abstractions that are not only perceptual and
+natural language is its higher form.
+
+A `word` is short and simple but its pointing to huge amounts of `meaning` without having to directly handle the complexity that they represent.
 
 By composing clauses made of `words` we can capture even larger amount of complexity that better describe the meaningful elements of reality . We can wrap these clauses as new `abstractions` to further compress complexity (ideas, models, frameworks...). This nesting process can continue indefinitely,  creating higher level `abstractions` without no upper bound.
 
@@ -139,7 +142,7 @@ Language and words are not the only systems we have to generate `abstractions`. 
 
 A computation is essentially the process of generating better `abstractions`, simplifying an aspect of reality to facilitate our relationship with it. But the  computation in itself can also be conceive as `abstraction` that transforms `abstractions`, making  code, functions, apps or machine learning models `abstractions` as well.
 
-In `IPMM` anything that has `meaning` can be encapsulated as an `abstraction`, which means that everything can have digital representation, forming a map of our personal ontology of the world in a digital form.
+In `IPMM` anything that has `meaning` can be expressed as a `meaning unit projection` and understood as an `abstraction`, which means that everything can have its digital representation. The result is our personal language, a map of `meaning` of our particular mind.
 
 Facilitating a coherent creation, evolution, re-use, and maintenance of `abstractions`, that map into how we think, is what enables better reasoning and communication, and the goal of `IPMM` is to support this process.
 
@@ -155,9 +158,9 @@ Facilitating a coherent creation, evolution, re-use, and maintenance of `abstrac
 
 An instance of a `meaning unit projection` within the IPMM framework is called a `note`.
 
-The main mechanism used to achieve `self-description` is by nesting `note`s within `note`s. This means that any element of a `note` can in itself be a `note` allowing for extremely complex nested objects. [`IPLD`](https://ipld.io/docs/) is used to represent this data structures.
+The main mechanism used to achieve `self-description` is by nesting `notes` within `notes`. This means that any element of a `note` can in itself be a `note` allowing for extremely complex nested objects. [`IPLD`](https://ipld.io/docs/) is used to represent this data structures.
 
-The reason the word "nesting" is used as opposed to "linking" is because the references in a `note` are assumed to be part of the `note` and not an outside thing. The nested `notes` have a "function" or a relationship with a quality in regards to its super-`note` and they are needed for the super-`note` to be understood. This is very different from the hyperlink pointing to a "web page".
+The reason the word "nesting" is used as opposed to "linking" is because the references in a `note` are assumed to be part of the `note` and not an outside thing. The nested `notes` are necessary to contribute to the `meaning` for the super-`note` to be understood . This is very different from the hyperlink pointing to a "web page".
 
 > A simple analogy that may help to understand the data representation of the `self-describing` quality would be to imagine it as a "[Merkle Tree](https://en.wikipedia.org/wiki/Merkle_tree)" of `meaning`, where each node is a `meaning unit projection` made of other `meaning units projection`s
 
@@ -170,7 +173,7 @@ The `self-describing` quality is manifested in multiple ways in the system:
 - `Self-describing transforms`: `Transforms` are `notes` that can compute other `notes`. They can be filters, renders, parsers, functions... Being `self-describing` means that they don't have "dependencies". Any code they need must be within the `note`, either directly or as a nested `note`.
 - `Self-describing text`: We can enable a system of [transclusions](https://en.wikipedia.org/wiki/Transclusion) where words, paragraphs and other text structures are nothing but the transcluded `properties` of a `note` and at the same time are pointers to that `note`. By having a semantic interface we can guarantee that the transclusion will still make sense in the future. This enables the capacity for each word to be `self-describing` which means that we do not need to rely on the ambiguous definitions of a global dictionary and instead we can create extremely explicit text where a resolution to its meaning can be added progressively. It also means that when writing (an article for example) the context required to make the point is extremely mitigated, as each concept/word can be self-explanatory. This type of text format is currently referred to as [interplanetary-text](interplanetary-text.md) and is one of the main focuses of exploration of the project as is where semantics meet the classical type system or where the `mind` meets the computer.
 
-## System topology
+## Technical mapping
 
 > While the main ideas are quite definitive, the specific details and namings still change constantly and should not be taken as specifications. They are for illustrative purposes only.
 
