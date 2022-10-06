@@ -1,6 +1,6 @@
-# Interplanetary mind-map (`IPMM`)
+# Interplanetary mind-map (IPMM)
 
-- [Interplanetary mind-map (`IPMM`)](#interplanetary-mind-map-ipmm)
+- [Interplanetary mind-map (IPMM)](#interplanetary-mind-map-ipmm)
     - [Overview](#overview)
         - [Abstract](#abstract)
         - [Current stage](#current-stage)
@@ -213,19 +213,26 @@ The `self-describing` quality is manifested in multiple ways in the system:
 
 ### New methodology
 
-Many of the ideas described here, require a different way to relate to language. It requires to break grammar and social norms and "force" language out of its ambiguity. That may seem antagonistic to the idea of mapping `information` like your `mind`, and in a way it is. I'll argue that it does not change its structure but it sharpen the boundaries of `meaning` instead. It is in this process where insights, connections, and better `abstractions` emerge. The `mind` is retrofitted with the product of the system gaining structure and clarity out of it.
+Many of the ideas described here, require a different way to relate to language. It requires to break grammar and social norms and "force" language out of its ambiguity. That may seem antagonistic to the idea of mapping `information` like your `mind`, and in a way it is. I'll argue that it does not change its structure but it sharpens the boundaries of `meaning` instead. It is in this process where insights, connections, and better `abstractions` emerge. The `mind` is retrofitted with the product of the system gaining structure and clarity out of it.
 
-One of the conflicts is in using language for communication vs language for reasoning. We're used to do everything with the former, and using it for reasoning and creating meaning for one-self seems artificial. And it makes it unnatural to use for communication.
+One of the conflicts is in using language for communication vs language for reasoning/meaning making. We're used to do everything with the former, and using it for reasoning and creating meaning for one-self seems artificial. And it makes it unnatural to use for communication.
 
-> E: I've been [publishing my `abstractions` as a newsletter](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3ck45ed5ca%22]]]&), and while they're extremely clear and accurate to me, they take a lot of effort for a reader not used to my `meaning units`
+Example:
+>  I've been [publishing my `abstractions` as a newsletter](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3ck45ed5ca%22]]]&), and while they're extremely clear and accurate to me, they take a lot of effort for a reader not familiar with my `meaning units`, they need to map them into their mind. In a "normal" text you just "assume" your own meaning.
 
-Because of its `abstraction malleability` capacity, new constructs can emerge that enable a find balance between communication and reasoning.
+Because of the `abstraction malleability` of the system, I'm certain that new constructs can emerge that enable a find balance between communication and reasoning.
 
-> E: A simple approach to that will be for example an article written with "communication style" but all its words map to a more "reasoning style".
+Example:
+> A simple approach to that will be for example an article written with "communication style" but all its words map to a more "reasoning style".
 
-Learning to identify `meaning unit`s and wrap them in `self-describing` `notes` requires some training. It is quite analogous to [code refactoring](https://en.wikipedia.org/wiki/Code_refactoring#techniques), where if you don't take care of your repo, it can rapidly become a useless mess.
+Another tension between communication vs reasoning is that the system forces self-consistency over shared consensus. This is not how most people work, the needs for belonging, acceptance, validation... are extremely powerful forces and shape most social interactions.
 
-All the above implies that is likely not a "plug & play" tool. It needs training, and its benefits are compounding over time and multiplied by the number of domains its used.
+Example:
+> Take [my own idea of abstraction](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cnnjsotia%22]]]&) . Redefining what "abstraction" means can viewed as a grandiose statement. [The wikipedia page on "abstraction"](https://en.wikipedia.org/wiki/Abstraction) is quite extensive and mentions 11 different disciplines where is used, and here I go defining it in my own terms. Sharing my meaning makes me quite vulnerable. Nevertheless each of give a particular meaning to the idea of  "abstraction", and we use it everywhere but never being explicit about it. What it is like to communicate exposing your own meaning?
+
+Learning to identify `meaning unit`s and wrap them in `self-describing` `notes` requires some training. It is quite analogous to [code refactoring](https://en.wikipedia.org/wiki/Code_refactoring#techniques), where if you don't take care of your repo, it can rapidly become a useless mess. Tooling can make a world of difference, but it can't replace the skill.
+
+With all the above, I'm certain that `IPMM` won't be "plug & play" tool. It needs training, and its benefits are compounding over time and multiplied by the number of domains its used. If anything it will be a different way to understand language and information.
 
 ### Use-cases
 
