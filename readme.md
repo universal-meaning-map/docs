@@ -447,8 +447,8 @@ If you found it technically or conceptually interesting or have any ideas I invi
 
 - Similarly, my current interest is in making the conceptual framework as understandable and accessible as possible. While I know there still a lot of work to do, if you have suggestions or struggle to understand something I'll be very happy to hear them or iterate over it.
 
-- While I keep developing the "conceptual framework" I'm starting to develop an editor/tool for thinking as a first MVP so I'm very much looking for developers that can help. (Rust, LibP2P, IPLD...)
+- While I keep developing the "conceptual framework" I'm starting to develop an editor/tool for thinking as a first MVP so I'm very much looking for developers that can help. (Rust, LibP2P, IPLD, low level graphics and text-editor stuff ...)
 
-I'm also doing an [experimental newsletter](https://buttondown.email/xavivives) and [Telegram channel](https://t.me/xavisabstractions) around language, communication, complexity and other stuff. I'm using `PIPMM` for it. It is dense and deep, but if that's your thing you may find it interesting.
+To follow the project [subscribe here](https://airtable.com/shrOSoLOYFW7pztMo) and I'll share meaningful progress without any bullshit.
 
-[Subscribe here](https://airtable.com/shrOSoLOYFW7pztMo) to get updates about the project.
+Alternatively I'm also doing an [experimental newsletter](https://buttondown.email/xavivives) and [Telegram channel](https://t.me/xavisabstractions) around language, communication, complexity and other stuff. I'm using `PIPMM` for it. It is dense and deep, and a lot of noise if you just want to get general project updates... but if that's your thing you may find it interesting.
