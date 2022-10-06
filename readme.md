@@ -19,7 +19,7 @@
         - [Self-describing data structure](#self-describing-data-structure)
         - [Instances of self-description](#instances-of-self-description)
     - [A different paradigm](#a-different-paradigm)
-        - [New methodology](#new-methodology)
+        - [Conflicts with language](#conflicts-with-language)
         - [Use-cases](#use-cases)
     - [Technical mapping](#technical-mapping)
         - [Node](#node)
@@ -211,16 +211,16 @@ The `self-describing` quality is manifested in multiple ways in the system:
 
 ## A different paradigm
 
-### New methodology
+### Conflicts with language
 
-Many of the ideas described here, require a different way to relate to language. It requires to break grammar and social norms and "force" language out of its ambiguity. That may seem antagonistic to the idea of mapping `information` like your `mind`, and in a way it is. I'll argue that it does not change its structure but it sharpens the boundaries of `meaning` instead. It is in this process where insights, connections, and better `abstractions` emerge. The `mind` is retrofitted with the product of the system gaining structure and clarity out of it.
+Many of the ideas described here (an others not captured in the /docs yet), require a different way to relate to language. It requires to break grammar and social norms and "force" language out of its ambiguity. That may seem antagonistic to the idea of mapping `information` like your `mind`, and in a way it is. I'll argue that it does not change its structure but it sharpens the boundaries of `meaning` instead. It is in this process where insights, connections, and better `abstractions` emerge. The `mind` is retrofitted with the product of the system gaining structure and clarity out of it.
 
 One of the conflicts is in using language for communication vs language for reasoning/meaning making. We're used to do everything with the former, and using it for reasoning and creating meaning for one-self seems artificial. And it makes it unnatural to use for communication.
 
 Example:
->  I've been [publishing my `abstractions` as a newsletter](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3ck45ed5ca%22]]]&), and while they're extremely clear and accurate to me, they take a lot of effort for a reader not familiar with my `meaning units`, they need to map them into their mind. In a "normal" text you just "assume" your own meaning.
+> I've been [publishing my `abstractions` as a newsletter](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3ck45ed5ca%22]]]&), and while they're extremely clear and accurate to me, they take a lot of effort for a reader not familiar with my `meaning units`, they need to map them into their mind. In a "normal" text you just "assume" your own meaning.
 
-Because of the `abstraction malleability` of the system, I'm certain that new constructs can emerge that enable a find balance between communication and reasoning.
+Because of the `abstraction malleability` of the system, I'm certain that new constructs can emerge that enable a fine balance between communication and reasoning.
 
 Example:
 > A simple approach to that will be for example an article written with "communication style" but all its words map to a more "reasoning style".
@@ -232,13 +232,13 @@ Example:
 
 Learning to identify `meaning unit`s and wrap them in `self-describing` `notes` requires some training. It is quite analogous to [code refactoring](https://en.wikipedia.org/wiki/Code_refactoring#techniques), where if you don't take care of your repo, it can rapidly become a useless mess. Tooling can make a world of difference, but it can't replace the skill.
 
-With all the above, I'm certain that `IPMM` won't be "plug & play" tool. It needs training, and its benefits are compounding over time and multiplied by the number of domains its used. If anything it will be a different way to understand language and information.
+With all the above, I'm certain that `IPMM` won't be "plug & play" tool. It needs training, its benefits are compounding over time and multiplied by the number of domains its used. If anything it will be a different way to understand language and information.
 
 ### Use-cases
 
 A system that embraces the above primitives is hard to imagine. The following are a set of use-cases and ideals it pursues that may help to further understand and materialize `IPMM` proposal.
 
-The use-cases are biased towards "semantic" domains (social networks, chats, forums, articles, news, productivity tools, note-taking...) that require little specialized computation (filtering, sorting, rendering, timers). While the goal of `IPMM` is to eventually be used in any software category its too early to evaluate how far this framework can be pushed.
+The use-cases are biased towards "semantic" domains. In the current software paradigm it translates to  social networks, chat apps, forums, articles, news, productivity tools, note-taking... In the `IPMM` paradigm all of those are the same thing, a system of creating, maintaining and sharing `meaning units` with adaptable user interfaces that require little specialized computation (filtering, sorting, rendering, timers). While the goal of `IPMM` is to eventually be used in any software category its too early to evaluate how far this framework can be pushed.
 
 - **Perfect traceability**. `Minformation` is born in a specific mind and its expression in the system can't be separated from its source. The evolution of each `note` can be traced and referenced all the way  back to its origin.
 
@@ -247,7 +247,7 @@ The use-cases are biased towards "semantic" domains (social networks, chats, for
 - **Atomic access control**.  Anything can be encapsulated as a `note` and therefore can have its own logic for to whom or how can be shared. The granularity of control is maximized as we can keep redefining the atomic pieces of `information` by re-abstracting.
     > E: In a text there may be words that are not accessible to specific requester, so neither the word or its definition can't be shown based on what its author have decided.
 
-    > E: A curated list of X is only accessed if the requester attaches a signature with a key that corresponds to a payment of at least Y payment in crypto.
+    > E: A curated list of X is only accessed if the requester attaches a signature with a key that corresponds to a payment of at least Y crypto amount.
 
 - **No copy & paste**. Information is never duplicated, it is referenced and transcluded, which means that double-source of truths are not possible.
     > E: In a documentation you can rename a property and is update all across. Even outside the documentation itself.
@@ -281,8 +281,11 @@ The use-cases are biased towards "semantic" domains (social networks, chats, for
 
 - **Interconnected life domains**. Currently our tooling for personal/professional/social stuff is separated. Mostly for privacy and legal concerns, but also because `information` is siloed in different systems. In `IPMM` Because we have full control of the privacy of `information` and we can create our our UI, we can work within a unified system. The compartamentalization of those domains prevents cross-pollination of abstractions.
 
-- **[Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) on asteroids**. `IPMM` can be understood as a hyper-generalization of Zettelkasten, where all information is interconnected and placed in the right box.
+- **[Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) on asteroids**. `IPMM` can be understood as a hyper-generalization of Zettelkasten, where granularity and atomicity are maximized and all information is interconnected and placed in the right box.
 
+- **Brain-computer interface**. If [Semantic reconstruction of continuous language from non-invasive brain recordings](https://www.biorxiv.org/content/10.1101/2022.09.29.509744v1.full) becomes accessible, I'll rather map it to my own `meaning units` as oppose to an ambiguous mapping with common language. Doing so allows me to map it to explicit meaning or computations.
+
+- **Web of trust**. The intrinsic P2P flow of `information` added to the capacity of curating and filtering your peers `meaning units` could enable a new type of web based on trust.
 
 ## Technical mapping
 
@@ -437,14 +440,14 @@ The [Interplanetary-text](interplanetary-text.md) currently contains a detailed 
 
 # Get in touch
 
-[I would love to talk to you](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cwx4lcc2a%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cbeeppy5a%22]]]&) :)
+Reasons [I would love to talk to you](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cwx4lcc2a%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cbeeppy5a%22]]]&):
 
-`Interplanetary mind-map` is in constant evolution and requires input from many disciplines.
+- `Interplanetary mind-map` is in constant evolution and requires input from many disciplines.
 If you found it technically or conceptually interesting or have any ideas I invite your to get in touch.
 
-Similarly, my current interest is in making the conceptual framework as understandable and accessible as possible. While I know there still a lot of work to do, if you have suggestions or struggle to understand something I'll be very happy to hear them or iterate over it.
+- Similarly, my current interest is in making the conceptual framework as understandable and accessible as possible. While I know there still a lot of work to do, if you have suggestions or struggle to understand something I'll be very happy to hear them or iterate over it.
 
-While I keep developing the "conceptual framework" I'm starting to develop an editor/tool for thinking as a first MVP so I'm very much looking for developers that can help. (Rust, LibP2P, IPLD...)
+- While I keep developing the "conceptual framework" I'm starting to develop an editor/tool for thinking as a first MVP so I'm very much looking for developers that can help. (Rust, LibP2P, IPLD...)
 
 I'm also doing an [experimental newsletter](https://buttondown.email/xavivives) and [Telegram channel](https://t.me/xavisabstractions) around language, communication, complexity and other stuff. I'm using `PIPMM` for it. It is dense and deep, but if that's your thing you may find it interesting.
 
