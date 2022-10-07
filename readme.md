@@ -39,6 +39,7 @@
     - [Installation](#installation)
     - [Exploration](#exploration)
 - [Get in touch](#get-in-touch)
+- [Follow](#follow)
 
 ## Overview
 
@@ -449,6 +450,8 @@ If you found it technically or conceptually interesting or have any ideas I invi
 
 - While I keep developing the "conceptual framework" I'm starting to develop an editor/tool for thinking as a first MVP so I'm very much looking for developers that can help. (Rust, LibP2P, IPLD, low level graphics and text-editor stuff...)
 
-To follow the project [subscribe here](https://airtable.com/shrOSoLOYFW7pztMo) and I'll share meaningful progress without any bullshit.
+# Follow
+
+I'm aiming to share **meaningful** progress through a newsletter. [Subscribe here](https://airtable.com/shrOSoLOYFW7pztMo) 
 
 Alternatively I'm also doing an [experimental newsletter](https://buttondown.email/xavivives) and [Telegram channel](https://t.me/xavisabstractions) around language, communication, complexity and other stuff. I'm using `PIPMM` for it. It is dense and deep, and a lot of noise if you just want to get general project updates... but if that's your thing you may find it interesting.
