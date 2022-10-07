@@ -28,7 +28,7 @@
         - [Property](#property)
         - [CID - Content identifier](#cid---content-identifier)
         - [IID - Intent identifier](#iid---intent-identifier)
-        - [AREF - `Abstraction` reference](#aref---abstraction-reference)
+        - [AREF - Abstraction reference](#aref---abstraction-reference)
     - [FAQ](#faq)
         - [Comparison with the Semantic Web](#comparison-with-the-semantic-web)
         - [Project philosophy](#project-philosophy)
@@ -44,7 +44,7 @@
 
 ### Abstract
 
-The `Interplanetary mind-map` (`IPMM`) is a [long term project](history.md) that aims to build a system of information that deals with extremely large levels of complexity, unattainable with current software architectures, and consequently increase our reasoning and communication capacities at individual and collective levels.
+The `Interplanetary mind-map` (`IPMM`) is a [long term project](history.md) that aims to build a system of information that enables our limited cognitive capacities to deal with much larger levels of complexity, unattainable with current software, and consequently maximize our reasoning and communication potential at individual and collective levels.
 
 `IPMM` endorses 3 fundamental assumptions:
 
@@ -61,7 +61,7 @@ These assumptions force digital `information` to be structured connected and nes
 
 ### Current stage
 
-Currently, `Interplanetary mind-map` aims to create a conceptual framework that is representative of the nature of `meaning` and the flow of `minformation` that can be mapped in technical implementation that can maximize its utility across most software domains.
+Currently, `Interplanetary mind-map` aims to create a conceptual framework that is representative of the nature of `meaning` and the flow of `minformation` that can be mapped in a technical implementation that can maximize its utility across most software domains.
 
 [Pseudo-Interplanetary mind-map](#pseudo-interplanetary-mind-map-pipmm) is a working prototype where the system fundamental assumptions and constructs are being explored.
 
@@ -338,7 +338,7 @@ The use-cases are biased towards "semantic" domains. In the current software par
 - An  `IID` looks like this: `QmXPTSJee8a4uy61vhAs35tM5bXDomSmo1BbTMUVAVbAGJsdqwz4ea`, the 46 first characters representing the `MID` and the latest 8 representing the `LIID`  
 ![Intent identifier mapping timeline](images/abstraction_timeline.png)
 
-### AREF - `Abstraction` reference
+### AREF - Abstraction reference
 
 - The `AREF` is a text expression that allows us to point to any element of the system.
 - Is the equivalent of what `hyperlink` is to the `hypertext`
@@ -447,7 +447,7 @@ If you found it technically or conceptually interesting or have any ideas I invi
 
 - Similarly, my current interest is in making the conceptual framework as understandable and accessible as possible. While I know there still a lot of work to do, if you have suggestions or struggle to understand something I'll be very happy to hear them or iterate over it.
 
-- While I keep developing the "conceptual framework" I'm starting to develop an editor/tool for thinking as a first MVP so I'm very much looking for developers that can help. (Rust, LibP2P, IPLD, low level graphics and text-editor stuff ...)
+- While I keep developing the "conceptual framework" I'm starting to develop an editor/tool for thinking as a first MVP so I'm very much looking for developers that can help. (Rust, LibP2P, IPLD, low level graphics and text-editor stuff...)
 
 To follow the project [subscribe here](https://airtable.com/shrOSoLOYFW7pztMo) and I'll share meaningful progress without any bullshit.
 
