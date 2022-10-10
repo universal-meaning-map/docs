@@ -3,9 +3,8 @@
 `Interplanetary text` is one of the infinite constructs that are possible with `IPMM` and responds to:
 > What does text look like under `IPMM` assumptions of `self-describing` `minformation`?
 
-
-Within `IPMM`'s jargon, words are `abstraction-pointers`. They lead our minds into a pre-existing idea of what that the word conveys, different for each of us.
-In a digital context though, the author could point the word to the exact `abstraction-projection` that is referring to. In other words... we can embed meaning and context within the word itself.
+Within `IPMM`'s jargon, words are `meaning unit pointers`. They lead our minds into a pre-existing idea of what that the word conveys, different for each of us.
+In a digital context though, the author could point the word to the exact `meaning unit projections` that is referring to. In other words... we can embed meaning and context within the word itself.
 
 This enables:
 - Transclusion: We can embed text inside text recursively without loosing meaning
