@@ -50,23 +50,23 @@ The `Interplanetary mind-map` (`IPMM`) is a [long term project](history.md) that
 `IPMM` endorses 3 fundamental assumptions:
 
 1. [Meaning is subjective](#meaning-is-subjective)  
-    The `meaning` given to specific `information` set is unique to each mind, as it is the product of an extremely complex cloud of associations. The word `minformation` is used to make this explicit. We need a system that aligns to each subject's `meaning`.
+    The `meaning` given to specific `information` set is unique to each mind, as it is the product of an extremely complex cloud of associations. We need a system that aligns to each subject's `meaning`.
 2. [Everything is an abstraction](#everything-is-an-abstraction)  
-    The single most fundamental form to manage complexity are `abstractions`. `Abstraction malleability` (facilitating their access, creation, re-use, maintenance and evolution) is fundamental to maximize their quality (the signal-to-noise ratio they can capture for their specific purpose).
+    The single most fundamental form to manage complexity are `abstractions`. `Abstraction malleability` (facilitating their access, creation, re-use, maintenance and evolution) is fundamental to maximize their quality (enhance the signal-to-noise ratio in relation to its specific purpose).
 3. [Information should aim to be self-describing](#information-should-aim-to-be-self-describing)  
-   To capture complexity and maximize interoperability, composability and understanding of information, there can't be external dependencies, `information` should not require external context to be used, computed or understood.
+   To maximize interoperability, composability and understanding of information, there can't be external dependencies, `information` should not require external context to be used, computed or understood.
 
 > `IPMM` is a distributed system of coherent `abstraction` composition around `self-describing` `meaning-units`.
 
-These assumptions force digital `information` to be structured connected and nested in a different new way. It enables a new paradigm for reasoning, communication and potentially computation where the entire system of `information` revolves around the particular ontologies and `abstractions` (language) of each mind allowing to adapt to each person needs, as opposed to subordinating people to the pre-assumptions, bias and incentives of software creators.
+These assumptions force digital `information` to be structured connected and nested in a different way. It enables a new paradigm for reasoning, communication and potentially computation where the entire system of `information` revolves around the subject's `meaning`, the `abstractions` of its mind, its personal language... allowing to adapt to each person needs, as opposed to subordinating people to the pre-assumptions, bias and incentives of software creators.
 
 ### Current stage
 
-Currently, `Interplanetary mind-map` aims to create a conceptual framework that is representative of the nature of `meaning` and the flow of `minformation` that can be mapped in a technical implementation that can maximize its utility across most software domains.
+Currently, `Interplanetary mind-map` its defining a conceptual framework that is representative of the nature of `meaning` and the flow of `information`  that can be mapped in a technical implementation that can maximize its utility across most software domains.
 
 [Pseudo-Interplanetary mind-map](#pseudo-interplanetary-mind-map-pipmm) is a working prototype where the system fundamental assumptions and constructs are being explored.
 
-A tool for reasoning as a first MVP is on the works and looking for collaborations. [Get in touch](#get-in-touch).
+A first protocol implementation and a tool for reasoning as a first MVP is on the works and looking for collaborations. [Get in touch](#get-in-touch).
 
 ### On terminology
 
@@ -147,12 +147,12 @@ Example:
 
 ### Language as system of abstractions
 
-Humans are unique in their capacity to create abstractions that are not only perceptual and
+Humans are unique in their capacity to create `abstractions` that are not only perceptual and
 natural language is its higher form.
 
 A `word` is short and simple but its pointing to huge amounts of `meaning` without having to directly handle the complexity that they represent.
 
-By composing clauses made of `words` we can capture even larger amount of complexity that better describe the meaningful elements of reality . We can wrap these clauses as new `abstractions` to further compress complexity (ideas, models, frameworks...). This nesting process can continue indefinitely,  creating higher level `abstractions` without no upper bound.
+By composing clauses made of `words` we can capture even larger amount of complexity that better describe the meaningful elements of reality . We can wrap these clauses as new `abstractions` to further compress complexity (new words, categories, ideas, models, frameworks...). This nesting process can continue indefinitely,  creating higher level `abstractions` without no upper bound.
 
 Language can be understood as a formal system of `abstraction` composition, that produces higher-level `abstractions` as a result.
 
@@ -172,7 +172,7 @@ In `IPMM` anything that has `meaning` can be expressed as multiple `meaning unit
 
 Example:
 > The idea of "My car" is a `meaning unit` and it can be represented as an arbitrary list of `meaning unit projections`:
-> Its name, a description, pictures, its documentation... Each of them may be composed of words that are in themselves other `meaning unit projections`.
+> Its name, a description, pictures, its documentation... Each of them may be composed of words or other `meaning unit projections` that are in themselves other `meaning unit projections`.
 
 Example:
 > The idea of "filter" is a `meaning unit`, as `meaning unit projections` may have a "definition" and a "pure function" that takes other `meaning unit projections` as arguments an it renders a filtered result.
@@ -181,7 +181,7 @@ Facilitating a coherent creation, evolution, re-use, and maintenance of `abstrac
 
 ## Information should aim to be self-describing
 
-Because `meaning` is intrinsically subjective and only part of it is shared, there would always be a gap where the consumer of a given `information` would not be able to assign the same `meaning` as its author. For the consumer to approximate its understanding to the `intended meaning` it needs more `contextual information`.
+Because `meaning` is intrinsically subjective and only part of it is shared, there will always be a gap where the consumer of a given `information` would not be able to assign the same `meaning` as its author. For the consumer to approximate its understanding to the `intended meaning` it needs more `contextual information`.
 
 What we can do to minimize this "gap" is to attempt to make `contextual information` part of the `information`.
 
@@ -216,7 +216,7 @@ The `self-describing` quality is manifested in multiple ways in the system:
 
 Many of the ideas described here (an others not captured in the /docs yet), require a different way to relate to language. It requires to break grammar and social norms and "force" language out of its ambiguity. That may seem antagonistic to the idea of mapping `information` like your `mind`, and in a way it is. I'll argue that it does not change its structure but it sharpens the boundaries of `meaning` instead. It is in this process where insights, connections, and better `abstractions` emerge. The `mind` is retrofitted with the product of the system gaining structure and clarity out of it.
 
-One of the conflicts is in using language for communication vs language for reasoning/meaning making. We're used to do everything with the former, and using it for reasoning and creating meaning for one-self seems artificial. And it makes it unnatural to use for communication.
+One of the conflicts is in using language for communication vs language for reasoning/meaning making. We're used to do everything with the former, and using it for reasoning and creating meaning for one-self seems artificial and the product of it makes it unnatural to use for communication.
 
 Example:
 > I've been [publishing my `abstractions` as a newsletter](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3ck45ed5ca%22]]]&), and while they're extremely clear and accurate to me, they take a lot of effort for a reader not familiar with my `meaning units`, they need to map them into their mind. In a "normal" text you just "assume" your own meaning.
@@ -229,7 +229,7 @@ Example:
 Another tension between communication vs reasoning is that the system forces self-consistency over shared consensus. This is not how most people work, the needs for belonging, acceptance, validation... are extremely powerful forces and shape most social interactions.
 
 Example:
-> Take [my own idea of abstraction](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cnnjsotia%22]]]&) . Redefining what "abstraction" means can viewed as a grandiose statement. [The wikipedia page on "abstraction"](https://en.wikipedia.org/wiki/Abstraction) is quite extensive and mentions 11 different disciplines where is used, and here I go defining it in my own terms. Sharing my meaning makes me quite vulnerable. Nevertheless each of give a particular meaning to the idea of  "abstraction", and we use it everywhere but never being explicit about it. What it is like to communicate exposing your own meaning?
+> Take [my own idea of abstraction](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cdzbeskxq%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cnnjsotia%22]]]&) . Redefining what "abstraction" means can be viewed as a grandiose statement. [The wikipedia page on "abstraction"](https://en.wikipedia.org/wiki/Abstraction) is quite extensive and mentions 11 different disciplines where is used, and here I go defining it in my own terms. Sharing my meaning makes me quite vulnerable. Nevertheless each of give a particular meaning to the idea of  "abstraction", and we use it everywhere but never being explicit about it. What it is like to communicate exposing your own meaning?
 
 Learning to identify `meaning unit`s and wrap them in `self-describing` `notes` requires some training. It is quite analogous to [code refactoring](https://en.wikipedia.org/wiki/Code_refactoring#techniques), where if you don't take care of your repo, it can rapidly become a useless mess. Tooling can make a world of difference, but it can't replace the skill.
 
@@ -239,7 +239,7 @@ With all the above, I'm certain that `IPMM` won't be "plug & play" tool. It need
 
 A system that embraces the above primitives is hard to imagine. The following are a set of use-cases and ideals it pursues that may help to further understand and materialize `IPMM` proposal.
 
-The use-cases are biased towards "semantic" domains. In the current software paradigm it translates to  social networks, chat apps, forums, articles, news, productivity tools, note-taking... In the `IPMM` paradigm all of those are the same thing, a system of creating, maintaining and sharing `meaning units` with adaptable user interfaces that require little specialized computation (filtering, sorting, rendering, timers). While the goal of `IPMM` is to eventually be used in any software category its too early to evaluate how far this framework can be pushed.
+The use-cases are biased towards "semantic" domains. In the current software paradigm it translates to  social networks, chat apps, forums, articles, news, productivity tools, note-taking... In the `IPMM` paradigm all of those are the same thing, a system of creating, maintaining and sharing `meaning units` with adaptable user interfaces that require little specialized computation (filtering, sorting, rendering, timers). While `IPMM` aims to eventually be used in any software category its too early to evaluate how far this framework can be pushed.
 
 - **Perfect traceability**. `Minformation` is born in a specific mind and its expression in the system can't be separated from its source. The evolution of each `note` can be traced and referenced all the way  back to its origin.
 
@@ -280,9 +280,9 @@ The use-cases are biased towards "semantic" domains. In the current software par
   
 - **Everything has an API endpoint**: Each `note` is behind a `mind`, and a `mind` is represented as a P2P node. This means that either by its `CID` or by its `IID`, and with the right access, a `note` can be reached.
 
-- **Interconnected life domains**. Currently our tooling for personal/professional/social stuff is separated. Mostly for privacy and legal concerns, but also because `information` is siloed in different systems. In `IPMM` Because we have full control of the privacy of `information` and we can create our our UI, we can work within a unified system. The compartamentalization of those domains prevents cross-pollination of abstractions.
+- **Interconnected life domains**. Currently our tooling for personal/professional/social stuff is separated. Mostly for privacy and legal concerns, but also because `information` is siloed in different systems. The compartamentalization of those domains prevents cross-pollination of abstractions. In `IPMM`, because we have full control of the privacy of `information` and we can create our own UI, we can work within a unified system.
 
-- **[Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) on asteroids**. `IPMM` can be understood as a hyper-generalization of Zettelkasten, where granularity and atomicity are maximized and all information is interconnected and placed in the right box.
+- **[Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) on asteroids**. `IPMM` can be understood as a hyper-generalization of Zettelkasten, where connectivity and atomicity of information is maximized.
 
 - **Brain-computer interface**. If [Semantic reconstruction of continuous language from non-invasive brain recordings](https://www.biorxiv.org/content/10.1101/2022.09.29.509744v1.full) becomes accessible, I'll rather map it to my own `meaning units` as oppose to an ambiguous mapping with common language. Doing so allows me to map it to explicit meaning or computations.
 
@@ -290,9 +290,7 @@ The use-cases are biased towards "semantic" domains. In the current software par
 
 ## Technical mapping
 
-> `IPMM` is still consolidating its conceptual framework. The following are references to help to better illustrate how the theory maps into a technical system. This references in particular are representative of how [`PIPMM`](#pseudo-interplanetary-mind-map-pipmm) has been architected, but are not definitive in any way, and some approaches still being constantly iterated.
-
-`IPMM` is fundamentally attempting to mimic the "analog" flow of `minformation` in a digital form. The following is a mapping of the previously described terminology to its digital counterparts.
+> `IPMM` is still consolidating its conceptual framework, attempting to mimic the "analog" flow of `minformation` in a digital form The following are references to help to better illustrate how the theory maps into a technical system. These references in particular are representative of how [`PIPMM`](#pseudo-interplanetary-mind-map-pipmm) has been architected, but are not definitive in any way, and some approaches still being constantly iterated.
 
 ### Node
 
@@ -448,10 +446,10 @@ If you found it technically or conceptually interesting or have any ideas I invi
 
 - Similarly, my current interest is in making the conceptual framework as understandable and accessible as possible. While I know there still a lot of work to do, if you have suggestions or struggle to understand something I'll be very happy to hear them or iterate over it.
 
-- While I keep developing the "conceptual framework" I'm starting to develop an editor/tool for thinking as a first MVP so I'm very much looking for developers that can help. (Rust, LibP2P, IPLD, low level graphics and text-editor stuff...)
+- While I keep developing the "conceptual framework" I'm starting to develop an editor/tool for thinking as a first MVP so I'm very much looking for developers that can help. (Rust, WASM LibP2P, IPLD, low level graphics and text-editor stuff...)
 
 # Follow
 
-I'm aiming to share **meaningful** progress through a newsletter. [Subscribe here](https://airtable.com/shrOSoLOYFW7pztMo) 
+I'm aiming to share **meaningful** progress through a newsletter. [Subscribe here](https://airtable.com/shrOSoLOYFW7pztMo)
 
 Alternatively I'm also doing an [experimental newsletter](https://buttondown.email/xavivives) and [Telegram channel](https://t.me/xavisabstractions) around language, communication, complexity and other stuff. I'm using `PIPMM` for it. It is dense and deep, and a lot of noise if you just want to get general project updates... but if that's your thing you may find it interesting.
