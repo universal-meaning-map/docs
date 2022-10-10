@@ -37,7 +37,6 @@
     - [Compromises](#compromises)
     - [Repositories](#repositories)
     - [Installation](#installation)
-    - [Exploration](#exploration)
 - [Get in touch](#get-in-touch)
 - [Follow](#follow)
 
@@ -360,12 +359,7 @@ Certain elements may seem similar to the `Semantic web` (and other similar proto
 
 - The system should aim to serve the particular `minds` of each individual and to enable them to reach the maximum potential as opposed to subordinate people to the system.
 - Because of its goals around recreating a fundamental information system, the project has an almost religious relationship around the use of information and therefore should be particularly aware of potentially misaligned incentives E.g. funding, corporate use, mindsets with "current web paradigm", token mechanisms, partnerships...
-- To maximize its potential it will never optimize for compatibility at core level with existing technologies, paradigms, formats...
-- Before moving forward towards a more "final" development is important to have conceptual framework and design. Most projects have a bias towards implementation, here the bias is towards its design. The current strategy is to go back and forth between...
-  1. Conceptual design
-  2. Proof of concept development
-  3. Play, use, experiment
-    ... until the conceptual design matches the desired intent. Then stablish a strategy for the development of the protocol.
+- To maximize its potential it can't optimize for compatibility (at core level) with existing technologies, paradigms, formats...
 
 # Pseudo Interplanetary mind-map (PIPMM)
 
@@ -433,10 +427,6 @@ Install:
 6. `pipmm watch`
 7. Open `http://localhost:56565/#?websocketsPort=34343&localServerPort=45454&expr=%5B%2212D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,%5B%5B%2212D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%2212D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cl5uz4zaq%22%5D%5D%5D`
 
-## Exploration
-
-The [Interplanetary-text](interplanetary-text.md) currently contains a detailed explanation of how all the above translates when applied to text
-
 # Get in touch
 
 Reasons [I would love to talk to you](https://xavivives.com/#?expr=[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3clzfmhs7a%22,[[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cwx4lcc2a%22],[%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3c2lf4dbua%22,%22i12D3KooWBSEYV1cK821KKdfVTHZc3gKaGkCQXjgoQotUDVYAxr3cbeeppy5a%22]]]&):
@@ -446,10 +436,10 @@ If you found it technically or conceptually interesting or have any ideas I invi
 
 - Similarly, my current interest is in making the conceptual framework as understandable and accessible as possible. While I know there still a lot of work to do, if you have suggestions or struggle to understand something I'll be very happy to hear them or iterate over it.
 
-- While I keep developing the "conceptual framework" I'm starting to develop an editor/tool for thinking as a first MVP so I'm very much looking for developers that can help. (Rust, WASM LibP2P, IPLD, low level graphics and text-editor stuff...)
+- While the "conceptual framework" its being more defined, I'm starting to develop the first version of the protocol and editor/tool for thinking as a first MVP so I'm very much looking for developers that can help. (Rust, WASM LibP2P, IPLD, low level graphics and text-editor stuff...)
 
 # Follow
 
-I'm aiming to share **meaningful** progress through a newsletter. [Subscribe here](https://airtable.com/shrOSoLOYFW7pztMo)
+I'm aiming to share **meaningful** progress of IPMM in a newsletter. [Subscribe here](https://airtable.com/shrOSoLOYFW7pztMo)
 
 Alternatively I'm also doing an [experimental newsletter](https://buttondown.email/xavivives) and [Telegram channel](https://t.me/xavisabstractions) around language, communication, complexity and other stuff. I'm using `PIPMM` for it. It is dense and deep, and a lot of noise if you just want to get general project updates... but if that's your thing you may find it interesting.
