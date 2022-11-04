@@ -43,7 +43,7 @@
 ## Overview
 
 [![Interplanetary mind-map. Transcending language](https://img.youtube.com/vi/H9TudZ_fC3o/maxresdefault.jpg)](https://youtu.be/H9TudZ_fC3o)
-[Interplanetary mind-map - Transcending language. On Youtube](https://youtu.be/H9TudZ_fC3o)
+[▶️ View on Youtube](https://youtu.be/H9TudZ_fC3o)
 
 ### Abstract
 
