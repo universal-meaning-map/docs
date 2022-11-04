@@ -42,6 +42,9 @@
 
 ## Overview
 
+[![Interplanetary mind-map. Transcending language](https://img.youtube.com/vi/H9TudZ_fC3o/maxresdefault.jpg)](https://youtu.be/H9TudZ_fC3o)
+[Interplanetary mind-map - Transcending language. On Youtube](https://youtu.be/H9TudZ_fC3o)
+
 ### Abstract
 
 The `Interplanetary mind-map` (`IPMM`) is a [long term project](history.md) that aims to build a system of information that enables our limited cognitive capacities to deal with much larger levels of complexity, unattainable with current software, and consequently maximize our reasoning and communication potential at individual and collective levels.
@@ -262,7 +265,7 @@ The use-cases are biased towards "semantic" domains. In the current software par
 
 - **Compounding sense making**. We are constantly re-thinking stuff because our current systems can't capture our reasoning and past conclusions easily enough, nor can't they make them easily accessible when needed. Because in `IPMM` information is connected mimicking how the user thinks, the user can just retrieve a conclusion with its reasoning and iterate over, compounding over its sense making as oppose to start over.
 
-- **Intrinsic [literate programming](https://en.wikipedia.org/wiki/Literate_programming)**. Computations carry with them their `meaning` as well.
+- **Intrinsic [literate programming](https://en.wikipedia.org/wiki/Literatle_programming)**. Computations carry with them their `meaning` as well.
 
 - **No more unnecessary intros**: Most of text books only carry a small percentage of new relevant information to the user because they're filled with context that the user may or may not know, but is necessary to understand "the point" the author is making. Because context its attached to each `meaning unit` the user can "browse" it as it needs as oppose to have to read it all beforehand.
 
@@ -287,6 +290,8 @@ The use-cases are biased towards "semantic" domains. In the current software par
 
 - **Web of trust**. The intrinsic P2P flow of `information` added to the capacity of curating and filtering your peers `meaning units` could enable a new type of web based on trust.
 
+- **Minimizes confirmation bias**. The bottom-up approach makes ideas emergent, as oppose to a top-down approach, where the idea is pre-conceived and then written down.
+  
 ## Technical mapping
 
 > `IPMM` is still consolidating its conceptual framework, attempting to mimic the "analog" flow of `minformation` in a digital form The following are references to help to better illustrate how the theory maps into a technical system. These references in particular are representative of how [`PIPMM`](#pseudo-interplanetary-mind-map-pipmm) has been architected, but are not definitive in any way, and some approaches still being constantly iterated.
